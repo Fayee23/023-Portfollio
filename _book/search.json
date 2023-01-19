@@ -2,21 +2,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Portfolio",
+    "title": "Personal Portfolio for Remote Sensing",
     "section": "",
-    "text": "This is a Quarto book.\nintroduce myself\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "Hi!\nI am Yifei Lin frome Guangzhou, China.\nNow I am a Master student from UCL, studying Urban Spatial Science in Centre for Advanced Spatial Analysis. I majored in Urban Planning at Sun Yat-sen University at undergraduate level, which is a five-year subject."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "2  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
   },

@@ -1,11 +1,7 @@
-# Preface {.unnumbered}
+# Preface {.sec_Preface}
 
-This is a Quarto book.
+Hi!
 
-introduce myself
+I am Yifei Lin frome Guangzhou, China.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+Now I am a Master student from UCL, studying Urban Spatial Science in Centre for Advanced Spatial Analysis. I majored in Urban Planning at Sun Yat-sen University at undergraduate level, which is a five-year subject.
