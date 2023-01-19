@@ -1,4 +1,4 @@
-# Preface {.sec_Preface}
+# Preface {.unnumbered}
 
 Hi!
 

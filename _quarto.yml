@@ -1,5 +1,6 @@
 project:
   type: book
+  #output_dir: docs
 
 book:
   title: "Personal Portfolio for Remote Sensing"
@@ -20,4 +21,4 @@ format:
     documentclass: scrreprt
 
 editor: visual
-#output_dir: docs
+
