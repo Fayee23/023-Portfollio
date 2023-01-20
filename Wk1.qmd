@@ -49,7 +49,7 @@ b.  Atmospheric: *its particles scatter energy*
 ::: {#wavelength layout-ncol="2"}
 ![Raleigh scatter](img01/Raleigh_scatter.png){#fig-scatter}
 
-![wavelength](img01/wavelength2.png){#fig-wavelength}
+![wavelength](img01/wavelength1.png){#fig-wavelength}
 :::
 
 -   Mie = particles are the same size compared to the wavelength
@@ -97,3 +97,20 @@ c. Jargon
 * Radiance: fixical data, also called Top of Atmosphere (TOA) radiance
 
 * Reflectance: measuring the property of a material, remove the effects of the light source in radiance
+
+  * Band 4: red (vegetation absorbs) 
+  
+  * Band 8: Near-infrared (NIR, that vegetation strongly reflects)
+  
+  * high values of NIR and low values of red: dense vegetation 
+  
+  * low values of both red and NIR: wet bare soil.
+  
+::: {#spectral_feature layout-ncol="2"}
+![NIR vs.Red scatter](img01/NIRvsRed1.png){#fig-NIRvsRed1}
+
+![spectral feature](img01/NIRvsRed2.png){#fig-spectral_feature}
+:::
+
+# Application
+
