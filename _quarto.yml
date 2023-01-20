@@ -5,10 +5,11 @@ project:
 book:
   title: "Personal Portfolio for Remote Sensing"
   author: "Yifei Lin"
-  date: "2023/1/19"
+  date: "023/1/19"
   chapters:
     - index.qmd
     - intro.qmd
+    - Wk1.qmd
     - summary.qmd
     - references.qmd
 

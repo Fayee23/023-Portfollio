@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Personal Portfolio for Remote Sensing",
     "section": "",
-    "text": "Hi!\nI am Yifei Lin frome Guangzhou, China.\nNow I am a Master student from UCL, studying Urban Spatial Science in Centre for Advanced Spatial Analysis. I majored in Urban Planning at Sun Yat-sen University at undergraduate level, which is a five-year subject."
+    "text": "Hi!\nI am Yifei Lin frome Guangzhou, China.\nNow I am a Master student in UCL, studying Urban Spatial Science in Centre for Advanced Spatial Analysis. I majored in Urban Planning at Sun Yat-sen University at undergraduate level, which is a five-year subject.\nIn CASA, I would like to learn advanced spatial analysis and dynamic modelling methods, and study how to apply those technology into practical planning project or city policy."
   },
   {
     "objectID": "intro.html",
@@ -26,5 +26,19 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Wk1.html",
+    "href": "Wk1.html",
+    "title": "2  Week 1 study dairy",
+    "section": "",
+    "text": "Passive (human eye, camera, satellite sensor)\n\n\nUse available energy (reflected sun energy)\nEmit nothing\nEnergy is in electromagnetic waves\n\n\nActive (Radar, X-ray, LiDAR)\n\n\nHave an energy source for illumination\nActively emits electormagentic waves and then waits to receive (Synthetic Aperture Radar (SAR) collects at longer wavelength that can pass through clouds)\n\n\n\n\n\n\n\nEMR: Waves of an electromagnetic field, travel through space and carry radiant energy\nElectromagnetic wave: part of the EMR spectrum, EMR propagates as waves\nRadiant flux: Energy per unit of time\n\n\n\n\n\nSurface\n\n\nAbsorb energy\nTransmit energy\n\n\nAtmospheric: its particles scatter energy\n\n\nRayleigh = particles are very small comparered to the wavelength —- atmosphere\n\nThe longer the wavelength is, the longer its light scatter reach (e.g. sky color)\nThe more it scattered, the deeper color it shows (e.g. shallow water vs deeper ocean)\n\n\n\n\n\n\nFigure 2.1: wavelength\n\n\n\n\n\n\n\nFigure 2.2: visible light\n\n\n\n\n\n\nMie = particles are the same size compared to the wavelength\nNon selective = particles are much larger than the wavelength\n\n\n\n\n\nSingle: same polarization transmitted and received\nDual: One sent, different one received\n\nHH = emitted in horizontal (H) and received in horizontal (H)\n\n\n\nFigure 2.3: dual polarization\n\n\n\nQuad polarization: system can transmit and receive four types\n\n\n\n\n\n\nFormats: raster\nResolutions\n\n\nSpatial resolution\nSpectral resolution: how many surface acrossed visible spectrum.\n\nTure color: what human see\n\n\n\nFigure 2.4: Spectral signature\n\n\n\nRadiometric resolution\n\nThe higher the bit, the more information (light or reflectance)\n\nTemporal resolution\n\nThe revisit time of the sensor (how often)\n\nJargon\n\n\nDigital number(DN): raw data\nRadiance: fixical data, also called Top of Atmosphere (TOA) radiance\nReflectance: measuring the property of a material, remove the effects of the light source in radiance"
+  },
+  {
+    "objectID": "Wk1.html#data",
+    "href": "Wk1.html#data",
+    "title": "2  Week 1 study dairy",
+    "section": "2.2 3. Data",
+    "text": "2.2 3. Data\n\nFormats: raster\nResolutions\n\n\nSpatial resolution\nSpectral resolution: how many surface acrossed visible spectrum. Ture color: what human see\n\n\n\n\nFigure 2.4: Spectral signature\n\n\n\nRadiometric resolution The higher the bit, the more information (light or reflectance)\nTemporal resolution The revisit time of the sensor (how often)\n\n\nJargon\n\n\nDigital number(DN): raw data\nRadiance: fixical data, also called Top of Atmosphere (TOA) radiance\nReflectance: measuring the property of a material, remove the effects of the light source in radiance"
   }
 ]

@@ -1,0 +1,97 @@
+# Week 1 study dairy {.sec_wk1}
+
+## Summary
+
+### Sensor
+
+a.  Passive (human eye, camera, satellite sensor)
+
+-   Use available energy (reflected sun energy)
+
+-   Emit nothing
+
+-   Energy is in electromagnetic waves
+
+b.  Active (Radar, X-ray, LiDAR)
+
+-   Have an energy source for illumination
+
+-   Actively emits electormagentic waves and then waits to receive (Synthetic Aperture Radar (SAR) collects at longer wavelength that can pass through clouds)
+
+### Electromagnetic radiation (EMR)
+
+#### Terms
+
+-   EMR: Waves of an electromagnetic field, travel through space and carry radiant energy
+
+-   Electromagnetic wave: part of the EMR spectrum, EMR propagates as waves
+
+-   Radiant flux: Energy per unit of time
+
+#### Interacting with earth's surface
+
+a.  Surface
+
+-   Absorb energy
+
+-   Transmit energy
+
+b.  Atmospheric: *its particles scatter energy*
+
+-   Rayleigh = particles are very small comparered to the wavelength ---- atmosphere
+
+*The longer the wavelength is, the longer its light scatter reach (e.g. sky color)*
+
+*The more it scattered, the deeper color it shows (e.g. shallow water vs deeper ocean)*
+
+::: {#wavelength layout-ncol="2"}
+![wavelength](img01/wavelength1.png){#fig-wavelength1}
+
+![visible light](img01/wavelength2.png){#fig-wavelength2}
+:::
+
+-   Mie = particles are the same size compared to the wavelength
+
+-   Non selective = particles are much larger than the wavelength
+
+#### Polarization
+
+-   Single: same polarization transmitted and received
+
+-   Dual: One sent, different one received
+
+*HH = emitted in horizontal (H) and received in horizontal (H)*
+
+![dual polarization](img01/polarization.png){#fig-polarization}
+
+-   Quad polarization: system can transmit and receive four types
+
+### Data
+
+a.  Formats: raster
+
+b.  Resolutions
+
+-   Spatial resolution
+
+-   Spectral resolution: how many surface acrossed visible spectrum. 
+
+*Ture color: what human see*
+
+![Spectral signature](img01/spectral.png){#fig-spectral}
+
+* Radiometric resolution
+
+*The higher the bit, the more information (light or reflectance)*
+
+* Temporal resolution
+
+*The revisit time of the sensor (how often)*
+
+c. Jargon
+
+* Digital number(DN): raw data
+
+* Radiance: fixical data, also called Top of Atmosphere (TOA) radiance
+
+* Reflectance: measuring the property of a material, remove the effects of the light source in radiance
