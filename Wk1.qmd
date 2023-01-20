@@ -1,4 +1,4 @@
-# Week 1 study dairy {.sec_wk1}
+# Week 1 study diary {.sec_wk1}
 
 ## Summary
 
@@ -17,6 +17,8 @@ b.  Active (Radar, X-ray, LiDAR)
 -   Have an energy source for illumination
 
 -   Actively emits electormagentic waves and then waits to receive (Synthetic Aperture Radar (SAR) collects at longer wavelength that can pass through clouds)
+
+![sensor](img01/sensor.png){#fig-sensor}
 
 ### Electromagnetic radiation (EMR)
 
@@ -45,9 +47,9 @@ b.  Atmospheric: *its particles scatter energy*
 *The more it scattered, the deeper color it shows (e.g. shallow water vs deeper ocean)*
 
 ::: {#wavelength layout-ncol="2"}
-![wavelength](img01/wavelength1.png){#fig-wavelength1}
+![Raleigh scatter](img01/Raleigh_scatter.png){#fig-scatter}
 
-![visible light](img01/wavelength2.png){#fig-wavelength2}
+![wavelength](img01/wavelength2.png){#fig-wavelength}
 :::
 
 -   Mie = particles are the same size compared to the wavelength
