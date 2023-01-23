@@ -1,11 +1,7 @@
 # Introduction {.unnumbered}
 
-iiui
-
 This is a book created from markdown and executable code.
 
-See @knuth84 for additional discussion of literate programming.
+It is kind of my learning diary of the module *Remote Sensing Cities and Environments*, including the summary of theoretical knowledge, their application, and my reflection.
 
-```{r}
-1 + 1
-```
+Hopefully, it will be helpful for me in the future.

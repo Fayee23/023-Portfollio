@@ -112,4 +112,48 @@ c.  Jargon
 ![spectral feature](img01/NIRvsRed2.png){#fig-spectral_feature}
 :::
 
-## Application
+## Application of satellite imagery
+
+Satellite remote sensing imagery is the most common remote sensing data used in regional science research in urban settings [@patino2013]. And Landsat imagery is one of satellite remote sensing data with consistent medium resolution.
+
+It collects data at each point on Earth each every 16 days (temporal resolution) in a raster grid composed of 30 by 30 m cells (spatial resolution).
+
+Here are several research areas of its application.
+
+### Quality of life index assessment
+
+An evaluation of the quality of life of the urban population is important to support decision making and sustainable urban management and planning and to measure policy outcomes, which takes into account not only socio-economic information about people but also information on the geographical context and environmental conditions of urban areas [@craglia2004].
+
+Various indices of quality of life, residential quality, attractiveness and a housing index have been estimated using remotely sensed data from Landsat MSS, TM, ETM+, and SPOT sensors and complementary data from censuses and surveys on housing size and value, population density, income and education.
+
+@lo1997 and @lo1997a used Landsat TM images combined with census data to assess the quality of life in Athens-Clarke County, Georgia, using image processing techniques and information overlay in GIS, which provides a reproducible approach for future researchers. The environmental variables extracted from the image data were land-use/land-cover as a percentage of urban use, vegetation as a normalized difference vegetation index (NDVI), and apparent surface temperature. The socio-economic variables extracted from the census data included population density, per capita income, median home value and percentage of college graduates. These data layers are integrated by principal component analysis and GIS overlay.
+
+### Urban growth analysis
+
+Remote sensing can play an important role in policy assessment related to urban growth, population dynamics and environmental issues within cities.
+
+
+
+### House value estimation
+
+House prices have been estimated using data from Landsat MSS, TM, ETM+ and ASTER sensors as well as complementary data from censuses and surveys of house structural attributes, population density, income, and distance to a central business district.
+
+@yu2006 used a Landsat ETM+ image for house value modeling in Milwaukee, Wisconsin. They integrated environmental characteristics derived from the remotely sensed image with house structural attributes to model house values using two different techniques: global ordinary least squares regression and a regression tree approach. The environmental characteristics derived from the image were the fractions of vegetation, impervious surface and soil, using the normalized spectral mixture analysis.
+
+### Urban population estimation
+
+
+
+### Urban social vulnerability assessment.
+
+
+## Reflection
+
+### Lessons
+* comprehensive use
+
+### Future research
+
+there are still important differences of opinion on the indicators of and contributors to quality of life and on how to use the information that indicators provide [@li2007a]
+
+As with the relationships between land-cover and socioeconomic variables, local research and knowledge must be considered for the results to be useful in policy making, urban planning and management.
