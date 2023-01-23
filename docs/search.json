@@ -9,16 +9,16 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "Wk1.html",
     "href": "Wk1.html",
-    "title": "2  Week 1 study diary",
+    "title": "1  Week 1: Introduction",
     "section": "",
-    "text": "3 Application"
+    "text": "Passive (human eye, camera, satellite sensor)\n\n\nUse available energy (reflected sun energy)\nEmit nothing\nEnergy is in electromagnetic waves\n\n\nActive (Radar, X-ray, LiDAR)\n\n\nHave an energy source for illumination\nActively emits electormagentic waves and then waits to receive (Synthetic Aperture Radar (SAR) collects at longer wavelength that can pass through clouds)\n\n\n\n\nFigure 1.1: sensor\n\n\n\n\n\n\n\n\nEMR: Waves of an electromagnetic field, travel through space and carry radiant energy\nElectromagnetic wave: part of the EMR spectrum, EMR propagates as waves\nRadiant flux: Energy per unit of time\n\n\n\n\n\nSurface\n\n\nAbsorb energy\nTransmit energy\n\n\nAtmospheric: its particles scatter energy\n\n\nRayleigh = particles are very small comparered to the wavelength —- atmosphere\n\nThe longer the wavelength is, the longer its light scatter reach (e.g. sky color)\nThe more it scattered, the deeper color it shows (e.g. shallow water vs deeper ocean)\n\n\n\n\n\n\nFigure 1.2: Raleigh scatter\n\n\n\n\n\n\n\nFigure 1.3: wavelength\n\n\n\n\n\n\nMie = particles are the same size compared to the wavelength\nNon selective = particles are much larger than the wavelength\n\n\n\n\n\nSingle: same polarization transmitted and received\nDual: One sent, different one received\n\nHH = emitted in horizontal (H) and received in horizontal (H)\n\n\n\nFigure 1.4: dual polarization\n\n\n\nQuad polarization: system can transmit and receive four types\n\n\n\n\n\n\nFormats: raster\nResolutions\n\n\nSpatial resolution\nSpectral resolution: how many surface acrossed visible spectrum.\n\nTure color: what human see\n\n\n\nFigure 1.5: Spectral signature\n\n\n\nRadiometric resolution\n\nThe higher the bit, the more information (light or reflectance)\n\nTemporal resolution\n\nThe revisit time of the sensor (how often)\n\nJargon\n\n\nDigital number(DN): raw data\nRadiance: fixical data, also called Top of Atmosphere (TOA) radiance\nReflectance: measuring the property of a material, remove the effects of the light source in radiance\n\nBand 4: red (vegetation absorbs)\nBand 8: Near-infrared (NIR, that vegetation strongly reflects)\nhigh values of NIR and low values of red: dense vegetation\nlow values of both red and NIR: wet bare soil.\n\n\n\n\n\n\n\n\nFigure 1.6: NIR vs.Red scatter\n\n\n\n\n\n\n\nFigure 1.7: spectral feature"
   },
   {
     "objectID": "summary.html",
@@ -33,5 +33,12 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Wk1.html#application",
+    "href": "Wk1.html#application",
+    "title": "1  Week 1: Introduction",
+    "section": "1.2 Application",
+    "text": "1.2 Application"
   }
 ]

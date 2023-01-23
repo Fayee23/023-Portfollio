@@ -1,4 +1,4 @@
-# Week 1 study diary {.sec_wk1}
+# Week 1: Introduction {.sec_wk1}
 
 ## Summary
 
@@ -76,41 +76,40 @@ b.  Resolutions
 
 -   Spatial resolution
 
--   Spectral resolution: how many surface acrossed visible spectrum. 
+-   Spectral resolution: how many surface acrossed visible spectrum.
 
 *Ture color: what human see*
 
 ![Spectral signature](img01/spectral.png){#fig-spectral}
 
-* Radiometric resolution
+-   Radiometric resolution
 
 *The higher the bit, the more information (light or reflectance)*
 
-* Temporal resolution
+-   Temporal resolution
 
 *The revisit time of the sensor (how often)*
 
-c. Jargon
+c.  Jargon
 
-* Digital number(DN): raw data
+-   Digital number(DN): raw data
 
-* Radiance: fixical data, also called Top of Atmosphere (TOA) radiance
+-   Radiance: fixical data, also called Top of Atmosphere (TOA) radiance
 
-* Reflectance: measuring the property of a material, remove the effects of the light source in radiance
+-   Reflectance: measuring the property of a material, remove the effects of the light source in radiance
 
-  * Band 4: red (vegetation absorbs) 
-  
-  * Band 8: Near-infrared (NIR, that vegetation strongly reflects)
-  
-  * high values of NIR and low values of red: dense vegetation 
-  
-  * low values of both red and NIR: wet bare soil.
-  
+    -   Band 4: red (vegetation absorbs)
+
+    -   Band 8: Near-infrared (NIR, that vegetation strongly reflects)
+
+    -   high values of NIR and low values of red: dense vegetation
+
+    -   low values of both red and NIR: wet bare soil.
+
 ::: {#spectral_feature layout-ncol="2"}
 ![NIR vs.Red scatter](img01/NIRvsRed1.png){#fig-NIRvsRed1}
 
 ![spectral feature](img01/NIRvsRed2.png){#fig-spectral_feature}
 :::
 
-# Application
-
+## Application
