@@ -1,0 +1,78 @@
+# Week 3: Remote sensing data {.sec_wk3}
+
+## Summary
+
+### Corrections
+
+a. Geometric correction
+
+![Source:[Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942)](img03/Geometric-correction.png){#fig-correction}
+
+* Solution 1:  identify Ground Control Points (GPS) to match known points in the image and a reference dataset, take the coordinates and model them to give geometric transformation coefficients
+
+  * GCP: ground control point
+
+* Solution 2: RMSE
+
+
+b. Atmospheric correction (remove the effect of atmosphere)
+
+two sources of environmental attenuation: Atmospheric scattering, Topographic attenuation
+
+* Relative
+
+  * **Dark object subtraction (DOS)**: Searches each band for the darkest value then subtracts that from each pixel
+  
+  * **Psuedo-invariant Features (PIFs)**: Assume brightness pixels linearly related to a base image(e.g. the centre point of the pixel), adjust the image based on the regression result, apply it to the rest of the pixels
+  
+* Absolute 
+
+Change digital brightness values into scaled surface reflectance. We can then compare these scaled surface reflectance values across the planet by **atmospheric radiative transfer models** 
+
+* Empirical Line Correction
+
+  * take measurements in situ using a field spectrometer, which require measurements at the same time as the satellite overpass
+
+  * Then use these measurements in linear regression against the satellite data raw digital number
+  
+  * Path radiance: radiance reflected above the surface (e.g. scattering)
+  ![radiance reflect](img03/Path-radiance.png){#fig-radiance}  
+  
+  * Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
+  ![Atmospheric attenuation](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
+  
+c. Orthorectification correction (i.e  topographic correction)
+
+* orthorectification = removing distortions (view staight down)
+![observations from satellite](img03/observations-from-satellite.png)
+
+d. Radiometric Calibration
+
+* Sensors capture image brightness and distributed as a Digital Number (or DN)
+
+### Data joining and enhancement
+
+a. Joining data sets
+
+feather the images together and then creates a seamless mosaic or image(s)
+
+* Within the overlap area an representative sample is taken
+
+* A histogram is extracted from the base image
+
+*It is then applied to image to using a histogram matching algorithm
+
+b. Image enhancement
+
+* Contrast Enhancement
+
+* Edge enhancement
+
+* Principal component Analysis: Transform multi-spectral data into uncorrelated and smaller dataset
+
+* Texture analysis
+
+* Image fusion
+
+## Application
+

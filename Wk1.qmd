@@ -1,4 +1,4 @@
-# Week 1: Introduction {.sec_wk1}
+# Week 1: Introduction to Remote Sensing {.sec_wk2}
 
 ## Summary
 
@@ -130,9 +130,9 @@ Various indices of quality of life, residential quality, attractiveness and a ho
 
 ### Urban growth analysis
 
-Remote sensing can play an important role in policy assessment related to urban growth, population dynamics and environmental issues within cities.
+Urban growth trends can be detected easily using medium spatial resolution satellite images, such as SPOT and Landsat TM, taking advantage of the very different spectral properties of urban manmade structures versus rural spaces.
 
-
+@madhavan2001 used Landsat TM images to measure and analyze the spatial growth of the Bangkok metropolitan area of Thailand.
 
 ### House value estimation
 
@@ -142,18 +142,17 @@ House prices have been estimated using data from Landsat MSS, TM, ETM+ and ASTER
 
 ### Urban population estimation
 
+An understanding of the population size and spatial distribution in urban areas is essential for social, economic and environmental applications.
 
-
-### Urban social vulnerability assessment.
+@harvey2002 used a Landsat TM image and census data for Ballarat and Geelong, Australia, to allocate population estimates to each pixel of the image and overcome the problem of spatial aggregation of census data.
 
 
 ## Reflection
 
 ### Lessons
-* comprehensive use
+
+* Research on urban setting related to remote sensing usually need to use comprehensive types of data.
 
 ### Future research
 
-there are still important differences of opinion on the indicators of and contributors to quality of life and on how to use the information that indicators provide [@li2007a]
-
-As with the relationships between land-cover and socioeconomic variables, local research and knowledge must be considered for the results to be useful in policy making, urban planning and management.
+It is still undetermined on the question of how to use the indicators and information that those analysis of remote sensing data provide [@li2007a].As with the relationships between society system and ecology system, local research and knowledge must be considered for the application of analysis results in policy making, urban planning and management.

@@ -6,8 +6,8 @@ My short presentation on LiDAR sensor is available [here](https://fayee23.github
 
 ## Useful resource
 
-* [Xaringan operation instruction](https://andrewmaclachlan.github.io/CASA0023/2_portfolio.html)
+-   [Xaringan operation instruction](https://andrewmaclachlan.github.io/CASA0023/2_portfolio.html)
 
-* [Xaringan CSS theme generator](https://cran.r-project.org/web/packages/xaringanthemer/vignettes/xaringanthemer.html)
+-   [Xaringan CSS theme generator](https://cran.r-project.org/web/packages/xaringanthemer/vignettes/xaringanthemer.html)
 
-* [[@grolemund]](https://bookdown.org/yihui/rmarkdown/xaringan.html)
+-   [Chapter 7 xaringan Presentations](https://bookdown.org/yihui/rmarkdown/xaringan.html)
