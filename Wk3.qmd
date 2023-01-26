@@ -36,14 +36,17 @@ Change digital brightness values into scaled surface reflectance. We can then co
   * Then use these measurements in linear regression against the satellite data raw digital number
   
   * Path radiance: radiance reflected above the surface (e.g. scattering)
+  
   ![radiance reflect](img03/Path-radiance.png){#fig-radiance}  
   
   * Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
+  
   ![Atmospheric attenuation](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
   
 c. Orthorectification correction (i.e  topographic correction)
 
 * orthorectification = removing distortions (view staight down)
+
 ![observations from satellite](img03/observations-from-satellite.png)
 
 d. Radiometric Calibration
@@ -76,3 +79,7 @@ b. Image enhancement
 
 ## Application
 
+
+## Reflection
+
+why it is interesting and how it use, data, method

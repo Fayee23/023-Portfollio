@@ -1,9 +1,23 @@
 # Preface {.unnumbered}
 
-Hi!
+Hello and welcome to my personal portfolio!
+
+## About me
 
 I am Yifei Lin frome Guangzhou, China.
 
 Now I am a master's student in UCL, and major in Urban Spatial Science at Centre for Advanced Spatial Analysis (CASA). I studied Urban Planning at Sun Yat-sen University at undergraduate level, which is a five-year subject.
 
 In CASA, I would like to learn advanced spatial analysis and dynamic modelling methods, and study how to apply those technology into practical planning project or city policy, in order to construct a sustainable and smart city.
+
+## About the portfolio
+
+This is a "book" created from markdown and executable code. It is kind of my weekly learning diary of the module *Remote Sensing Cities and Environments*, including the summary of theoretical knowledge, their application, and my personal reflection.
+
+Hopefully, it will be helpful for me in the future.
+
+## Acknowledgement
+
+Thanks to Dr Andrew Maclachlan for teaching this module as well as creating those detailed practical instruction and learning materials.
+
+Also, thanks to our teaching assistant for helping us.

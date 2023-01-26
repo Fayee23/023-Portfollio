@@ -1,7 +1,0 @@
-# Introduction {.unnumbered}
-
-This is a book created from markdown and executable code.
-
-It is kind of my learning diary of the module *Remote Sensing Cities and Environments*, including the summary of theoretical knowledge, their application, and my reflection.
-
-Hopefully, it will be helpful for me in the future.

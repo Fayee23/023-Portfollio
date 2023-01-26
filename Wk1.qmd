@@ -62,7 +62,7 @@ b.  Atmospheric: *its particles scatter energy*
 
 -   Dual: One sent, different one received
 
-*HH = emitted in horizontal (H) and received in horizontal (H)*
+    *HH = emitted in horizontal (H) and received in horizontal (H)*
 
 ![dual polarization](img01/polarization.png){#fig-polarization}
 
@@ -78,17 +78,17 @@ b.  Resolutions
 
 -   Spectral resolution: how many surface acrossed visible spectrum.
 
-*Ture color: what human see*
+    *Ture color: what human see*
 
 ![Spectral signature](img01/spectral.png){#fig-spectral}
 
 -   Radiometric resolution
 
-*The higher the bit, the more information (light or reflectance)*
+    *The higher the bit, the more information (light or reflectance)*
 
 -   Temporal resolution
 
-*The revisit time of the sensor (how often)*
+    *The revisit time of the sensor (how often)*
 
 c.  Jargon
 
@@ -151,7 +151,13 @@ An understanding of the population size and spatial distribution in urban areas 
 
 ### Lessons
 
-* Research on urban setting related to remote sensing usually need to use comprehensive types of data.
+* Remote sensing can make the field research easier, in terms of learning the land use conditions and building information, which is an important part before doing a planning project.
+
+* Remote sensing can also lead to a reasonable and effective planning with urban population estimation, life quality assessment and house value estimation.
+
+* Research on urban setting related to remote sensing usually need to use comprehensive types of data, such as census data and satellite imagery.
+
+* There is a combine usage of statistics analysis approach and spatial analysis approach in related research, such as principal component analysis, global ordinary least squares regression and GIS overlay.
 
 ### Future research
 
