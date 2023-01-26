@@ -4,82 +4,110 @@
 
 ### Corrections
 
-a. Geometric correction
+a.  Geometric correction
 
 ![Source:[Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942)](img03/Geometric-correction.png){#fig-correction}
 
-* Solution 1:  identify Ground Control Points (GPS) to match known points in the image and a reference dataset, take the coordinates and model them to give geometric transformation coefficients
+-   Solution 1: identify Ground Control Points (GPS) to match known points in the image and a reference dataset, take the coordinates and model them to give geometric transformation coefficients
 
-  * GCP: ground control point
+    -   GCP: ground control point
 
-* Solution 2: RMSE
+-   Solution 2: RMSE
 
-
-b. Atmospheric correction (remove the effect of atmosphere)
+b.  Atmospheric correction (remove the effect of atmosphere)
 
 two sources of environmental attenuation: Atmospheric scattering, Topographic attenuation
 
-* Relative
+-   Relative
 
-  * **Dark object subtraction (DOS)**: Searches each band for the darkest value then subtracts that from each pixel
-  
-  * **Psuedo-invariant Features (PIFs)**: Assume brightness pixels linearly related to a base image(e.g. the centre point of the pixel), adjust the image based on the regression result, apply it to the rest of the pixels
-  
-* Absolute 
+    -   **Dark object subtraction (DOS)**: Searches each band for the darkest value then subtracts that from each pixel
 
-Change digital brightness values into scaled surface reflectance. We can then compare these scaled surface reflectance values across the planet by **atmospheric radiative transfer models** 
+    -   **Psuedo-invariant Features (PIFs)**: Assume brightness pixels linearly related to a base image(e.g. the centre point of the pixel), adjust the image based on the regression result, apply it to the rest of the pixels
 
-* Empirical Line Correction
+-   Absolute
 
-  * take measurements in situ using a field spectrometer, which require measurements at the same time as the satellite overpass
+Change digital brightness values into scaled surface reflectance. We can then compare these scaled surface reflectance values across the planet by **atmospheric radiative transfer models**
 
-  * Then use these measurements in linear regression against the satellite data raw digital number
-  
-  * Path radiance: radiance reflected above the surface (e.g. scattering)
-  
-  ![radiance reflect](img03/Path-radiance.png){#fig-radiance}  
-  
-  * Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
-  
-  ![Atmospheric attenuation](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
-  
-c. Orthorectification correction (i.e  topographic correction)
+-   Empirical Line Correction
 
-* orthorectification = removing distortions (view staight down)
+    -   take measurements in situ using a field spectrometer, which require measurements at the same time as the satellite overpass
+
+    -   Then use these measurements in linear regression against the satellite data raw digital number
+
+    -   Path radiance: radiance reflected above the surface (e.g. scattering)
+
+    ![radiance reflect](img03/Path-radiance.png){#fig-radiance}
+
+    -   Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
+
+    ![Atmospheric attenuation](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
+
+c.  Orthorectification correction (i.e topographic correction)
+
+-   orthorectification = removing distortions (view staight down)
 
 ![observations from satellite](img03/observations-from-satellite.png)
 
-d. Radiometric Calibration
+d.  Radiometric Calibration
 
-* Sensors capture image brightness and distributed as a Digital Number (or DN)
+-   Sensors capture image brightness and distributed as a Digital Number (or DN)
 
 ### Data joining and enhancement
 
-a. Joining data sets
+a.  Joining data sets
 
 feather the images together and then creates a seamless mosaic or image(s)
 
-* Within the overlap area an representative sample is taken
+-   Within the overlap area an representative sample is taken
 
-* A histogram is extracted from the base image
+-   A histogram is extracted from the base image
 
-*It is then applied to image to using a histogram matching algorithm
+-   It is then applied to image to using a histogram matching algorithm
 
-b. Image enhancement
+b.  Image enhancement
 
-* Contrast Enhancement
+-   Contrast Enhancement
 
-* Edge enhancement
+-   Ratio: identify a certain landscape feature of the same material
 
-* Principal component Analysis: Transform multi-spectral data into uncorrelated and smaller dataset
+> e.g. Normalised Difference Vegetation Index: based on the fact that healthy and green vegetation reflects more in the NIR but absorbs in the Red wavelength
+>
+> to highlight areas with healthy vegetation:
+>
+> $NDVI = \frac{NIR-Red}{NIR+Red}$
 
-* Texture analysis
+-   Filtering: move window operation to our data which can be saved as a separate raster file
 
-* Image fusion
+-   Principal component Analysis: transform multi-spectral data into uncorrelated and smaller dataset
+
+-   Texture analysis: kind of adding spatial variation of gray values to make it have texture
+
+-   Image fusion: appending new raster data to the existing data or making a new raster dataset with different bands
 
 ## Application
 
+Because the solar radiation on the sun-surface-sensor path in the visible and NIR spectral regions is subject to absorption and scattering by atmospheric gases and aerosols, the hyperspectral imaging data contains atmospheric effects.
+
+In order to use hyperspectral imaging data for quantitative remote sensing of land surfaces and ocean color, the atmospheric effects must be removed.
+
+@gao2000 developed an atmospheric correction algorithm for hyperspectral remote sensing of ocean color with the near-future Coastal Ocean Imaging Spectrometer. The algorithm uses lookup tables generated with a vector radiative transfer code. Aerosol parameters are determined by a spectrum-matching technique that uses channels located at wavelengths longer than 0.86 um. The aerosol information is extracted back to the visible based on aerosol models during the retrieval of water-leaving radiances.
+
+::: {#analysis_result layout-ncol="2"}
+![Result in Chesapeake Bay](img03/app-radiance.png){#fig-app3result1}
+
+![Result in Florida Keys](img03/app-result.png){#fig-app3result2}
+:::
+
+Source: @gao2000
+
+In the sample result of Chesapeake Bay, the overall shapes of the reflectance spectra above 0.45 um are quite consistent with those measured from other field measurements. Below 0.45 um, the reflectances fall off too rapidly with decreasing wavelengths and even become negative for wavelengths less than 0.41 um. It is likely due to radiometric calibration of the AVIRIS instrument, which reports too-small radiances in the blue spectral region.
+
+In the sample result of Florida Keys, for the deepest water reflectance spectrum (marked I), the reflectance peak is centered near 0.50 um. For the shallowest water (marked IV), the reflectance peak is centered approximately at 0.57 um. The shapes of the Fig.9(c) reflectance spectra above 0.45 mm are consistent with those of field-measured reflectance spectra over similar clear waters with a sand bottom in Lake Tahoe.
+
+Without field-measured reflectance spectra corresponding to the spectra in those sample result, direct comparisons between the retrieved reflectances and field-measured reflectances can hardly be conducted.
 
 ## Reflection
 
-why it is interesting and how it use, data, method
+-   Data correction and enhancement are quite practical in real project, because we should know to what extent the data is being manipulated and how it is processed. Also, we may need to join the data sets and merge the imagery to show the research area or planning site.
+
+

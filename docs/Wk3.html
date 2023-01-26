@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -30,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
+<link href="./Wk4.html" rel="next">
 <link href="./Wk2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -61,6 +80,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -100,11 +120,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">Introduction</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./Wk1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1: Introduction to Remote Sensing</span></a>
   </div>
 </li>
@@ -120,7 +135,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./Wk4.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -143,6 +163,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-joining-and-enhancement" id="toc-data-joining-and-enhancement" class="nav-link" data-scroll-target="#data-joining-and-enhancement"><span class="toc-section-number">3.1.2</span>  Data joining and enhancement</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">3.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">3.3</span>  Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -203,16 +224,36 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>take measurements in situ using a field spectrometer, which require measurements at the same time as the satellite overpass</p></li>
 <li><p>Then use these measurements in linear regression against the satellite data raw digital number</p></li>
-<li><p>Path radiance: radiance reflected above the surface (e.g.&nbsp;scattering) <img src="img03/Path-radiance.png" id="fig-radiance" class="img-fluid" alt="radiance reflect"></p></li>
-<li><p>Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g.&nbsp;water vapour) <img src="img03/Atmospheric-attenuation.png" id="fig-EMRabsorption" class="img-fluid" alt="Atmospheric attenuation"></p></li>
-</ul></li>
+<li><p>Path radiance: radiance reflected above the surface (e.g.&nbsp;scattering)</p></li>
+</ul>
+<div id="fig-radiance" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img03/Path-radiance.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: radiance reflect</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g.&nbsp;water vapour)</li>
+</ul>
+<div id="fig-EMRabsorption" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img03/Atmospheric-attenuation.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.3: Atmospheric attenuation</figcaption><p></p>
+</figure>
+</div></li>
 </ul>
 <ol start="3" type="a">
 <li>Orthorectification correction (i.e topographic correction)</li>
 </ol>
 <ul>
-<li>orthorectification = removing distortions (view staight down) <img src="img03/observations-from-satellite.png" class="img-fluid" alt="observations from satellite"></li>
+<li>orthorectification = removing distortions (view staight down)</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img03/observations-from-satellite.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">observations from satellite</figcaption><p></p>
+</figure>
+</div>
 <ol start="4" type="a">
 <li>Radiometric Calibration</li>
 </ol>
@@ -229,24 +270,70 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Within the overlap area an representative sample is taken</p></li>
 <li><p>A histogram is extracted from the base image</p></li>
+<li><p>It is then applied to image to using a histogram matching algorithm</p></li>
 </ul>
-<p>*It is then applied to image to using a histogram matching algorithm</p>
 <ol start="2" type="a">
 <li>Image enhancement</li>
 </ol>
 <ul>
 <li><p>Contrast Enhancement</p></li>
-<li><p>Edge enhancement</p></li>
-<li><p>Principal component Analysis: Transform multi-spectral data into uncorrelated and smaller dataset</p></li>
-<li><p>Texture analysis</p></li>
-<li><p>Image fusion</p></li>
+<li><p>Ratio: identify a certain landscape feature of the same material</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>e.g.&nbsp;Normalised Difference Vegetation Index: based on the fact that healthy and green vegetation reflects more in the NIR but absorbs in the Red wavelength</p>
+<p>to highlight areas with healthy vegetation:</p>
+<p><span class="math inline">\(NDVI = \frac{NIR-Red}{NIR+Red}\)</span></p>
+</blockquote>
+<ul>
+<li><p>Filtering: move window operation to our data which can be saved as a separate raster file</p></li>
+<li><p>Principal component Analysis: transform multi-spectral data into uncorrelated and smaller dataset</p></li>
+<li><p>Texture analysis: kind of adding spatial variation of gray values to make it have texture</p></li>
+<li><p>Image fusion: appending new raster data to the existing data or making a new raster dataset with different bands</p></li>
 </ul>
 </section>
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
+<p>Because the solar radiation on the sun-surface-sensor path in the visible and NIR spectral regions is subject to absorption and scattering by atmospheric gases and aerosols, the hyperspectral imaging data contains atmospheric effects.</p>
+<p>In order to use hyperspectral imaging data for quantitative remote sensing of land surfaces and ocean color, the atmospheric effects must be removed.</p>
+<p><span class="citation" data-cites="gao2000">Gao et al. (<a href="references.html#ref-gao2000" role="doc-biblioref">2000</a>)</span> developed an atmospheric correction algorithm for hyperspectral remote sensing of ocean color with the near-future Coastal Ocean Imaging Spectrometer. The algorithm uses lookup tables generated with a vector radiative transfer code. Aerosol parameters are determined by a spectrum-matching technique that uses channels located at wavelengths longer than 0.86 um. The aerosol information is extracted back to the visible based on aerosol models during the retrieval of water-leaving radiances.</p>
+<div id="analysis_result" class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-app3result1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img03/app-radiance.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.4: Result in Chesapeake Bay</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-app3result2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img03/app-result.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.5: Result in Florida Keys</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Source: <span class="citation" data-cites="gao2000">Gao et al. (<a href="references.html#ref-gao2000" role="doc-biblioref">2000</a>)</span></p>
+<p>In the sample result of Chesapeake Bay, the overall shapes of the reflectance spectra above 0.45 um are quite consistent with those measured from other field measurements. Below 0.45 um, the reflectances fall off too rapidly with decreasing wavelengths and even become negative for wavelengths less than 0.41 um. It is likely due to radiometric calibration of the AVIRIS instrument, which reports too-small radiances in the blue spectral region.</p>
+<p>In the sample result of Florida Keys, for the deepest water reflectance spectrum (marked I), the reflectance peak is centered near 0.50 um. For the shallowest water (marked IV), the reflectance peak is centered approximately at 0.57 um. The shapes of the Fig.9(c) reflectance spectra above 0.45 mm are consistent with those of field-measured reflectance spectra over similar clear waters with a sand bottom in Lake Tahoe.</p>
+<p>Without field-measured reflectance spectra corresponding to the spectra in those sample result, direct comparisons between the retrieved reflectances and field-measured reflectances can hardly be conducted.</p>
+</section>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<ul>
+<li>Data correction and enhancement are quite practical in real project, because we should know to what extent the data is being manipulated and how it is processed. Also, we may need to join the data sets and merge the imagery to show the research area or planning site.</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-gao2000" class="csl-entry" role="doc-biblioentry">
+Gao, Bo-Cai, Marcos J. Montes, Ziauddin Ahmad, and Curtiss O. Davis. 2000. <span>“Atmospheric Correction Algorithm for Hyperspectral Remote Sensing of Ocean Color from Space.”</span> <em>Applied Optics</em> 39 (6): 887–96. <a href="https://doi.org/10.1364/AO.39.000887">https://doi.org/10.1364/AO.39.000887</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -355,8 +442,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Wk4.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4: Policy</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
