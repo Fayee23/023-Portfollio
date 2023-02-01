@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -137,7 +156,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#application" id="toc-application" class="nav-link active" data-scroll-target="#application"><span class="toc-section-number">4.1</span>  Application</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">4.1</span>  Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">4.2</span>  Application</a>
+  <ul class="collapse">
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="toc-section-number">4.2.1</span>  Data</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method"><span class="toc-section-number">4.2.2</span>  Method</a></li>
+  <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome"><span class="toc-section-number">4.2.3</span>  Outcome</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">4.3</span>  Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -160,11 +186,87 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="application" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="application"><span class="header-section-number">4.1</span> Application</h2>
-<p>how does the city polity to meet what goal proposed by international policy</p>
+<section id="summary" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
+<p>The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity <span class="citation" data-cites="zotero-492">(<a href="references.html#ref-zotero-492" role="doc-biblioref"><span>“Sustainable <span>Development Goals</span> | <span>United Nations Development Programme</span>,”</span> n.d.</a>)</span>.It is an important and challenge topic in urban planning and policy in today’s era that how to build a sustainable and resilient city of the future. One of the strategies for SDGs is as follow.</p>
+<blockquote class="blockquote">
+<p>By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations</p>
+</blockquote>
+<p>Here, we focus on the Storm Water Management Model (SWMM) which can be able to solve the water-related disasters mentioned above. To achieve efficient storm water management, Sydney has a strategy in the <em>Smart City Strategic Framework (2020)</em> <span class="citation" data-cites="2020b">(<a href="references.html#ref-2020b" role="doc-biblioref"><span>“Smart City Strategic Framework”</span> 2020</a>)</span>.</p>
+<blockquote class="blockquote">
+<p>Explore options for developing artificial intelligence capabilities to drive efficient resource use, and advance the circular economy. Machine learning capabilities can analyse data collected from sensor networks to <strong>monitor quality of urban conditions</strong> and automate decisions. For example, a smart stormwater system could determine cleaning and maintenance schedules and identify flooding risks, or smart irrigation can help us manage water use to green the city.</p>
+</blockquote>
+<p>This strategy not only solve the challenge of storm water management effectively, but also save the cost and reuse water resource. With the identification of potential flooding area, infrastructure can be constructed at the most essential places without the waste of cost and resource. If the infrastructure is aging or creaking, it can be modifies and responded in time with real-time monitoring of the urban condition. Green Infrastructure can also be applied together to reuse water resource and improve the quality of landscape and environment.</p>
+</section>
+<section id="application" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
+<p><span class="citation" data-cites="tsubaki2010">Tsubaki and Fujita (<a href="references.html#ref-tsubaki2010" role="doc-biblioref">2010</a>)</span> developed a comprehensive method to conduct detailed inundation flow simulations for a populated area with quite complex topographical features using LiDAR (Light Detection and Ranging) data. They used detailed geospatial information including the location and shape of each building extracted from the LiDAR data to generate unstructured grid that represents the complex urban landscape, and estimated the water depth by performing different inundation simulations.</p>
+<section id="data" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="data"><span class="header-section-number">4.2.1</span> Data</h3>
+<p>LiDAR</p>
+<ul>
+<li>Platform: Cessna C207</li>
+<li>Laser scanner: ALTM3100-C (Optec)</li>
+<li>Laser pulse frequency: 50 000 Hz</li>
+<li>Altitude: 2000 m</li>
+<li>Scanning frequency: 30 Hz</li>
+<li>Point density: 1/m2</li>
+</ul>
+</section>
+<section id="method" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="method"><span class="header-section-number">4.2.2</span> Method</h3>
+<p>Here is the flow chart of data processing.</p>
+<p><img src="img04/flow-chart.png" class="img-fluid" alt="Flow chart Source:(Tsubaki and Fujita 2010)"> {fig-tsubaki2010Framework}</p>
+<p>In this study, the line segmentation approach, proposed by <span class="citation" data-cites="sithole2003">Sithole and Vosselman (<a href="references.html#ref-sithole2003" role="doc-biblioref">2003</a>)</span>, is used to obtain digital terrain model (DTM). This method involves the segmentation of a point-cloud followed by a classification. Based on the elevation connectivity of the neighbouring segments, the domain is classified as terrain (bare earth and attached objects such as bridges and overpasses, which connect to bare earth on one side), detached objects (buildings and vegetations), and unclassified area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img04/outcome.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Steps of LiDAR and colour data processing, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>Then, distinguish between vegetation and building areas by Delaunay triangulation and generate unstructured grid</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img04/outcome2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Building extraction and unstructured grid generation, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="outcome" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="outcome"><span class="header-section-number">4.2.3</span> Outcome</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img04/flood_model.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Digital model, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img04/inundation-flow-simulation.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Inundation flow simulation, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
+<p>what you have learnt in relation to the policy, city and the application of the data.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-sithole2003" class="csl-entry" role="doc-biblioentry">
+Sithole, G., and G. Vosselman. 2003. <span>“Automatic Structure Detection in a Point-Cloud of an Urban Landscape.”</span> In <em>2003 2nd <span>GRSS</span>/<span>ISPRS Joint Workshop</span> on <span>Remote Sensing</span> and <span>Data Fusion</span> over <span>Urban Areas</span></em>, 67–71. <a href="https://doi.org/10.1109/DFUA.2003.1219959">https://doi.org/10.1109/DFUA.2003.1219959</a>.
+</div>
+<div id="ref-2020b" class="csl-entry" role="doc-biblioentry">
+<span>“Smart City Strategic Framework.”</span> 2020. <em>City of Sydney</em>. https://www.cityofsydney.nsw.gov.au/strategies-action-plans/smart-city-strategic-framework.
+</div>
+<div id="ref-zotero-492" class="csl-entry" role="doc-biblioentry">
+<span>“Sustainable <span>Development Goals</span> | <span>United Nations Development Programme</span>.”</span> n.d. <em>UNDP</em>. https://www.undp.org/sustainable-development-goals.
+</div>
+<div id="ref-tsubaki2010" class="csl-entry" role="doc-biblioentry">
+Tsubaki, Ryota, and Ichiro Fujita. 2010. <span>“Unstructured Grid Generation Using <span>LiDAR</span> Data for Urban Flood Inundation Modelling.”</span> <em>Hydrological Processes</em> 24 (11): 1404–20. <a href="https://doi.org/10.1002/hyp.7608">https://doi.org/10.1002/hyp.7608</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
