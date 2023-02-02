@@ -10,7 +10,7 @@ Here, we focus on the Storm Water Management Model (SWMM) which can be able to s
 
 > Explore options for developing artificial intelligence capabilities to drive efficient resource use, and advance the circular economy. Machine learning capabilities can analyse data collected from sensor networks to **monitor quality of urban conditions** and automate decisions. For example, a smart stormwater system could determine cleaning and maintenance schedules and identify flooding risks, or smart irrigation can help us manage water use to green the city.
 
-This strategy not only solve the challenge of storm water management effectively, but also save the cost and reuse water resource. With the identification of potential flooding area, infrastructure can be constructed at the most essential places without the waste of cost and resource. If the infrastructure is aging or creaking, it can be modifies and responded in time with real-time monitoring of the urban condition. Green Infrastructure can also be applied together to reuse water resource and improve the quality of landscape and environment.
+This strategy not only solve the challenge of storm water management effectively, but also reduce the unnecessary cost and reuse water resource. With the identification of **potential flooding area with different level**, **differential management** can be constructed at the most essential places without the waste of cost and resource. If the infrastructure is aging or creaking, it can be modifies and responded in time with real-time monitoring of the urban condition. Green Infrastructure can also be applied together to reuse water resource and improve the quality of landscape and environment.
 
 ## Application
 
