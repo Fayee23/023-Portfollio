@@ -2,11 +2,11 @@
 
 ## Summary
 
-The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity [@zotero-492].It is an important and challenge topic in urban planning and policy in today's era that how to build a sustainable and resilient city of the future. One of the strategies for SDGs is as follow.
+The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity [@2015].It is an important and challenge topic in urban planning and policy in today's era that how to build a sustainable and resilient city of the future. One of the strategies for SDGs is as follow.
 
 > By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations
 
-Here, we focus on the Storm Water Management Model (SWMM) which can be able to solve the water-related disasters mentioned above. To achieve efficient storm water management, Sydney has a strategy in the *Smart City Strategic Framework (2020)* [@2020b].
+Here, I focus on the Storm Water Management Model (SWMM) which can be able to solve the water-related disasters mentioned above. To achieve efficient storm water management, Sydney has a strategy in the *@2020b*.
 
 > Explore options for developing artificial intelligence capabilities to drive efficient resource use, and advance the circular economy. Machine learning capabilities can analyse data collected from sensor networks to **monitor quality of urban conditions** and automate decisions. For example, a smart stormwater system could determine cleaning and maintenance schedules and identify flooding risks, or smart irrigation can help us manage water use to green the city.
 
@@ -49,4 +49,12 @@ Then, distinguish between vegetation and building areas by Delaunay triangulatio
 
 ## Reflection
 
-what you have learnt in relation to the policy, city and the application of the data.
+In this era of information, city governance pursue high efficiency and environmental sustainability, so that remote sensing plays an essential role to provide monitoring information about city's condition. 
+
+With the support of remote sensing data, people can predict disasters, monitor pollution and estimate resources, and then conduct relevant policy to solve it, which help to reduce the cost brought by future environmental pressure. 
+
+In the case of flooding simulation [@tsubaki2010], LiDAR data provides a high exquisite precision to predict potential flooding areas or urban water logging places. For government, massive construction of grey infrastructure and flooding prevention can be put forward in these areas, which can make use of those public expenditure and reduce the potential risk. 
+
+And this application of LiDAR data can partially reach the storm water management policy of Sydney. With the identification of potential flooding area with different level, differential management can be constructed at the most essential places without the waste of cost and resource. 
+
+However, if we want to monitor the real-time condition of urban and those infrastructure, it is doubtable that whether LiDAR data can support it or not. It might be a large amount of financial cost. And to respond the condition changing and decide automatically, machine learning and Artificial Intelligence capabilities are needed, which is a long road to expore. 

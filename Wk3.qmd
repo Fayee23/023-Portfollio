@@ -110,4 +110,4 @@ Without field-measured reflectance spectra corresponding to the spectra in those
 
 -   Data correction and enhancement are quite practical in real project, because we should know to what extent the data is being manipulated and how it is processed. Also, we may need to join the data sets and merge the imagery to show the research area or planning site.
 
-
+* On the other hand, correction can be also used in specific research areas, such as detecting ocean color in meteorology, atmospheric sciences and so on.
