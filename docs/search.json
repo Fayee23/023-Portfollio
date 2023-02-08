@@ -88,7 +88,7 @@
     "href": "Wk3.html#reflection",
     "title": "3  Week 3: Remote sensing data",
     "section": "3.3 Reflection",
-    "text": "3.3 Reflection\n\nData correction and enhancement are quite practical in real project, because we should know to what extent the data is being manipulated and how it is processed. Also, we may need to join the data sets and merge the imagery to show the research area or planning site.\nOn the other hand, correction can be also used in specific research areas, such as detecting ocean color in meteorology, atmospheric sciences and so on.\n\n\n\n\n\nGao, Bo-Cai, Marcos J. Montes, Ziauddin Ahmad, and Curtiss O. Davis. 2000. “Atmospheric Correction Algorithm for Hyperspectral Remote Sensing of Ocean Color from Space.” Applied Optics 39 (6): 887–96. https://doi.org/10.1364/AO.39.000887."
+    "text": "3.3 Reflection\n\nData correction and enhancement are quite practical in real project, because we should know to what extent the data is being manipulated and how it is processed. Also, we may need to join the data sets and merge the imagery to show the research area or planning site.\nOn the other hand, correction can be also used in specific research areas, such as detecting ocean color in meteorology and atmospheric sciences, and detect healthy vegetation in agriculture.\n\n\n\n\n\nGao, Bo-Cai, Marcos J. Montes, Ziauddin Ahmad, and Curtiss O. Davis. 2000. “Atmospheric Correction Algorithm for Hyperspectral Remote Sensing of Ocean Color from Space.” Applied Optics 39 (6): 887–96. https://doi.org/10.1364/AO.39.000887."
   },
   {
     "objectID": "Wk4.html",
@@ -117,5 +117,12 @@
     "title": "5  Week5: Introduction to Google Earth Engine",
     "section": "",
     "text": "scale has different resolution\npical classification -> land cover map"
+  },
+  {
+    "objectID": "Wk4.html#application-of-flooding-simulation",
+    "href": "Wk4.html#application-of-flooding-simulation",
+    "title": "4  Week 4: Policy",
+    "section": "4.2 Application of flooding simulation",
+    "text": "4.2 Application of flooding simulation\nTsubaki and Fujita (2010) developed a comprehensive method to conduct detailed inundation flow simulations for a populated area with quite complex topographical features using LiDAR (Light Detection and Ranging) data. They used detailed geospatial information including the location and shape of each building extracted from the LiDAR data to generate unstructured grid that represents the complex urban landscape, and estimated the water depth by performing different inundation simulations.\n\n4.2.1 Data\nLiDAR\n\nPlatform: Cessna C207\nLaser scanner: ALTM3100-C (Optec)\nLaser pulse frequency: 50 000 Hz\nAltitude: 2000 m\nScanning frequency: 30 Hz\nPoint density: 1/m2\n\n\n\n4.2.2 Methodology\nHere is the flow chart of data processing.\n {#fig-tsubaki2010Framework}\nIn this study, the line segmentation approach, proposed by Sithole and Vosselman (2003), is used to obtain digital terrain model (DTM). This method involves the segmentation of a point-cloud followed by a classification. Based on the elevation connectivity of the neighbouring segments, the domain is classified as terrain (bare earth and attached objects such as bridges and overpasses, which connect to bare earth on one side), detached objects (buildings and vegetations), and unclassified area.\n\n\n\nSteps of LiDAR and colour data processing, Source:(Tsubaki and Fujita 2010)\n\n\nThen, distinguish between vegetation and building areas by Delaunay triangulation and generate unstructured grid\n\n\n\nBuilding extraction and unstructured grid generation, Source:(Tsubaki and Fujita 2010)\n\n\n\n\n4.2.3 Outcome\n\n\n\nFigure 4.1: Digital terrain model, Source:(Tsubaki and Fujita 2010)\n\n\n\n\n\nInundation flow simulation, Source:(Tsubaki and Fujita 2010)"
   }
 ]

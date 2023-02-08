@@ -12,7 +12,7 @@ Here, I focus on the Storm Water Management Model (SWMM) which can be able to so
 
 This strategy not only solve the challenge of storm water management effectively, but also reduce the unnecessary cost and reuse water resource. With the identification of **potential flooding area with different level**, **differential management** can be constructed at the most essential places without the waste of cost and resource. If the infrastructure is aging or creaking, it can be modifies and responded in time with real-time monitoring of the urban condition. Green Infrastructure can also be applied together to reuse water resource and improve the quality of landscape and environment.
 
-## Application
+## Application of flooding simulation
 
 @tsubaki2010 developed a comprehensive method to conduct detailed inundation flow simulations for a populated area with quite complex topographical features using LiDAR (Light Detection and Ranging) data. They used detailed geospatial information including the location and shape of each building extracted from the LiDAR data to generate unstructured grid that represents the complex urban landscape, and estimated the water depth by performing different inundation simulations.
 
@@ -27,11 +27,11 @@ LiDAR
 * Scanning frequency: 30 Hz
 * Point density: 1/m2
 
-### Method
+### Methodology
 
 Here is the flow chart of data processing.
 
-![Flow chart Source:[@tsubaki2010]](img04/flow-chart.png) {fig-tsubaki2010Framework}
+![Flow chart Source:[@tsubaki2010]](img04/flow-chart.png) {#fig-tsubaki2010Framework}
 
 In this study, the line segmentation approach, proposed by @sithole2003, is used to obtain **digital terrain model (DTM)**. This method involves the segmentation of a point-cloud followed by a classification. Based on the elevation connectivity of the neighbouring segments, the domain is classified as terrain (bare earth and attached objects such as bridges and overpasses, which connect to bare earth on one side), **detached objects** (buildings and vegetations), and unclassified area.
 
@@ -43,7 +43,7 @@ Then, distinguish between vegetation and building areas by Delaunay triangulatio
 
 ### Outcome
 
-![Digital model, Source:[@tsubaki2010]](img04/flood_model.png)
+![Digital terrain model, Source:[@tsubaki2010]](img04/flood_model.png){#fig-TerrainModel}
 
 ![Inundation flow simulation, Source:[@tsubaki2010]](img04/inundation-flow-simulation.png)
 
