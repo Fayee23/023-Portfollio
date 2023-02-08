@@ -1,0 +1,9 @@
+# Week5: Introduction to Google Earth Engine
+
+## Summary
+
+
+
+scale has different resolution
+
+pical classification -> land cover map
