@@ -221,19 +221,24 @@ div.csl-indent {
 <section id="methodology" class="level3" data-number="4.2.2">
 <h3 data-number="4.2.2" class="anchored" data-anchor-id="methodology"><span class="header-section-number">4.2.2</span> Methodology</h3>
 <p>Here is the flow chart of data processing.</p>
-<p><img src="img04/flow-chart.png" class="img-fluid" alt="Flow chart Source:(Tsubaki and Fujita 2010)"> {#fig-tsubaki2010Framework}</p>
+<div id="fig-tsubaki2010Framework" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img04/flow-chart.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4.1: Flow chart Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+</figure>
+</div>
 <p>In this study, the line segmentation approach, proposed by <span class="citation" data-cites="sithole2003">Sithole and Vosselman (<a href="references.html#ref-sithole2003" role="doc-biblioref">2003</a>)</span>, is used to obtain <strong>digital terrain model (DTM)</strong>. This method involves the segmentation of a point-cloud followed by a classification. Based on the elevation connectivity of the neighbouring segments, the domain is classified as terrain (bare earth and attached objects such as bridges and overpasses, which connect to bare earth on one side), <strong>detached objects</strong> (buildings and vegetations), and unclassified area.</p>
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-LidarProcessing" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img04/outcome.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Steps of LiDAR and colour data processing, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4.2: Steps of LiDAR and colour data processing, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
 </figure>
 </div>
 <p>Then, distinguish between vegetation and building areas by Delaunay triangulation and generate unstructured grid</p>
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-BuildingExtraction" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img04/outcome2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Building extraction and unstructured grid generation, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4.3: Building extraction and unstructured grid generation, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -242,13 +247,13 @@ div.csl-indent {
 <div id="fig-TerrainModel" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img04/flood_model.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;4.1: Digital terrain model, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4.4: Digital terrain model, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-FloodSimulation" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img04/inundation-flow-simulation.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Inundation flow simulation, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4.5: Inundation flow simulation, Source:<span class="citation" data-cites="tsubaki2010">(<a href="references.html#ref-tsubaki2010" role="doc-biblioref">Tsubaki and Fujita 2010</a>)</span></figcaption><p></p>
 </figure>
 </div>
 </section>
