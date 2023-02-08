@@ -46,7 +46,7 @@ c.  Orthorectification correction (i.e topographic correction)
 
 -   orthorectification = removing distortions (view staight down)
 
-![observations from satellite](img03/observations-from-satellite.png)
+![observations from satellite](img03/observations-from-satellite.png){#fig-SatelliteObservation}
 
 d.  Radiometric Calibration
 
