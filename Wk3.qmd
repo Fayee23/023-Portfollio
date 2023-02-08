@@ -36,17 +36,17 @@ Change digital brightness values into scaled surface reflectance. We can then co
 
     -   Path radiance: radiance reflected above the surface (e.g. scattering)
 
-    ![radiance reflect](img03/Path-radiance.png){#fig-radiance}
+    ![radiance reflect, Source: [Remote Sensing in Precision Agriculture](https://ohioline.osu.edu/factsheet/fabe-5541)](img03/Path-radiance.png){#fig-radiance}
 
     -   Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
 
-    ![Atmospheric attenuation](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
+    ![Atmospheric attenuation, Source: [GIS geography](https://gisgeography.com/atmospheric-window/)](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
 
 c.  Orthorectification correction (i.e topographic correction)
 
 -   orthorectification = removing distortions (view staight down)
 
-![observations from satellite](img03/observations-from-satellite.png){#fig-SatelliteObservation}
+![observations from satellite, Source: [NASA page](https://sacs.aeronomie.be/info/sza.php)](img03/observations-from-satellite.png){#fig-SatelliteObservation}
 
 d.  Radiometric Calibration
 
@@ -93,12 +93,10 @@ In order to use hyperspectral imaging data for quantitative remote sensing of la
 @gao2000 developed an atmospheric correction algorithm for hyperspectral remote sensing of ocean color with the near-future Coastal Ocean Imaging Spectrometer. The algorithm uses lookup tables generated with a vector radiative transfer code. Aerosol parameters are determined by a spectrum-matching technique that uses channels located at wavelengths longer than 0.86 um. The aerosol information is extracted back to the visible based on aerosol models during the retrieval of water-leaving radiances.
 
 ::: {#analysis_result layout-ncol="2"}
-![Result in Chesapeake Bay](img03/app-radiance.png){#fig-app3result1}
+![Result in Chesapeake Bay, Source: @gao2000](img03/app-radiance.png){#fig-app3result1}
 
-![Result in Florida Keys](img03/app-result.png){#fig-app3result2}
+![Result in Florida Keys, Source: @gao2000](img03/app-result.png){#fig-app3result2}
 :::
-
-Source: @gao2000
 
 In the sample result of Chesapeake Bay, the overall shapes of the reflectance spectra above 0.45 um are quite consistent with those measured from other field measurements. Below 0.45 um, the reflectances fall off too rapidly with decreasing wavelengths and even become negative for wavelengths less than 0.41 um. It is likely due to radiometric calibration of the AVIRIS instrument, which reports too-small radiances in the blue spectral region.
 
