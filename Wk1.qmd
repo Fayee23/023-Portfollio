@@ -146,19 +146,18 @@ An understanding of the population size and spatial distribution in urban areas 
 
 @harvey2002 used a Landsat TM image and census data for Ballarat and Geelong, Australia, to allocate population estimates to each pixel of the image and overcome the problem of spatial aggregation of census data.
 
-
 ## Reflection
 
 ### Lessons
 
-* Remote sensing can make the field research easier, in terms of learning the land use conditions and building information, which is an important part before doing a planning project.
+-   Remote sensing can make the field research easier, in terms of learning the land use conditions and building information, which is an important part before doing a planning project.
 
-* Remote sensing can also lead to a reasonable and effective planning with urban population estimation, life quality assessment and house value estimation.
+-   Remote sensing can also lead to a reasonable and effective planning with urban population estimation, life quality assessment and house value estimation.
 
-* Research on urban setting related to remote sensing usually need to use comprehensive types of data, such as census data and satellite imagery.
+-   Research on urban setting related to remote sensing usually need to use comprehensive types of data, such as census data and satellite imagery.
 
-* There is a combine usage of statistics analysis approach and spatial analysis approach in related research, such as principal component analysis, global ordinary least squares regression and GIS overlay.
+-   There is a combine usage of statistics analysis approach and spatial analysis approach in related research, such as principal component analysis, global ordinary least squares regression and GIS overlay.
 
 ### Future research
 
-It is still undetermined on the question of how to use the indicators and information that those analysis of remote sensing data provide [@li2007a].As with the relationships between society system and ecology system, local research and knowledge must be considered for the application of analysis results in policy making, urban planning and management.
+It is still undetermined on the question of how to use the indicators and information that those analysis of remote sensing data provide [@li2007].As with the relationships between society system and ecology system, local research and knowledge must be considered for the application of analysis results in policy making, urban planning and management.
