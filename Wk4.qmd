@@ -31,21 +31,21 @@ LiDAR
 
 Here is the flow chart of data processing.
 
-![Flow chart Source:[@tsubaki2010]](img04/flow-chart.png){#fig-tsubaki2010Framework}
+![Flow chart, Source: @tsubaki2010](img04/flow-chart.png){#fig-tsubaki2010Framework}
 
 In this study, the line segmentation approach, proposed by @sithole2003, is used to obtain **digital terrain model (DTM)**. This method involves the segmentation of a point-cloud followed by a classification. Based on the elevation connectivity of the neighbouring segments, the domain is classified as terrain (bare earth and attached objects such as bridges and overpasses, which connect to bare earth on one side), **detached objects** (buildings and vegetations), and unclassified area.
 
-![Steps of LiDAR and colour data processing, Source:[@tsubaki2010]](img04/outcome.png){#fig-LidarProcessing}
+![Steps of LiDAR and colour data processing, Source: @tsubaki2010](img04/outcome.png){#fig-LidarProcessing}
 
 Then, distinguish between vegetation and building areas by Delaunay triangulation and generate unstructured grid
 
-![Building extraction and unstructured grid generation, Source:[@tsubaki2010]](img04/outcome2.png){#fig-BuildingExtraction}
+![Building extraction and unstructured grid generation, Source:@tsubaki2010](img04/outcome2.png){#fig-BuildingExtraction}
 
 ### Outcome
 
-![Digital terrain model, Source:[@tsubaki2010]](img04/flood_model.png){#fig-TerrainModel}
+![Digital terrain model, Source: @tsubaki2010](img04/flood_model.png){#fig-TerrainModel}
 
-![Inundation flow simulation, Source:[@tsubaki2010]](img04/inundation-flow-simulation.png){#fig-FloodSimulation}
+![Inundation flow simulation, Source: @tsubaki2010](img04/inundation-flow-simulation.png){#fig-FloodSimulation}
 
 ## Reflection
 
