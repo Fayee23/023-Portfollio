@@ -1,9 +1,54 @@
-# Week5: Introduction to Google Earth Engine
+# Week5: Google Earth Engine
 
 ## Summary
 
+![mind map](img05/mindchart.png)
 
+Its cloud-based geospatial processing capability and accessibility to a large collection of geospatial datasets enable environmental and urban studies conveniently.
 
-scale has different resolution
+## Application
 
-pical classification -> land cover map
+@liang2020 built up urban sustainability model based on the concept of ecosystem service value (ESV) and in the cloud with GEE; is the first application of classifying GEE Landsat time-series images to compute yearly ESV; and creates the first set of cloud tools to augment GEE for ecologists and urban modelers to model urban sustainability from GEE and ESV. Applying in Hohhot City, the model successfully estimated ecosystem service values and analyzed urban growth sustainability. It also revealed spatial disparities and temporal dynamics of urban growth sustainability in Hohhot City.
+
+### Data source
+
+To demonstrate how to detect time-series (yearly from 2005 to 2016) LULC changes, a comprehensive geospatial dataset, including Landsat5 TM, Landsat7 ETM+ and Landsat8 OLI, was retrieved from Google Earth Engine
+
+### Methological
+
+![Source: @liang2020](img05/Framework.png)
+
+a. image retrieval and preprocessing with the main tasks of data normalization and time-series image stacking
+
+b. LULC preliminary classification, including the selection of classification systems, appropriate classifiers, and training and testing samples
+
+* existing GEE functions: Classification and Regression Trees (CART), Minimum Distance (MIN), and Random Forest (RF) classifiers were compared with the same training and validation data
+
+> GEE has supported different types of pixel-based classifiers for image extraction, including conventional parametric supervised classifiers (i.e. Minimum distance) and machine learning classifiers (i.e. Random Forest, Classification and Regression Trees), although the Object-based image analysis (OBIA) has not been supported yet. In addition, the confusion matrix has been realized in GEE and the related APIs have been provided as well. The overall accuracy and kappa statistics can be directly computed in GEE for assessment.
+
+c. LULC post-classification, consisting two primary functions of removing errors and reducing noises of the initial classification and checking temporal consistence of the classified images
+
+d. urban sustainability modeling in the context of ESV, including the determination of weight parameters of different land use categories and various ecological functions before computing static ecosystem service value (ESV), the computation of dynamic ESV through the integration of social development variables, and the modeling of urban sustainability by considering gross domestic product (GDP) and per capita net income (PCNI)
+
+e. visualization and analysis of the modeling outcomes
+
+### Result
+
+a. LULC
+![Source: @liang2020](img05/LULCresult.png)
+
+urban built-up area in the city center of Hohhot expanded a lot from 2005 to 2016, and several suburban centers and distant areas observed apparent urban expansion.
+
+b. ESV estimation and urban sustainability modeling
+
+![Source: @liang2020](img05/SI.png)
+
+The dynamics of SI displayed a three-phased change. From 2005 to 2008, despite continuous growth of GDP and PCNI, SI reduced sharply in response to the dramatic decline of ESVd, especially in 2008. From 2009 to 2013, SI was considerably improved, although it showed obvious fluctuation. The final phase of SI change started in 2014. Though SI was positive, the increase percentage displayed a slightly decreasing trend.
+
+## Reflection
+
+* There is difference in accuracy among those function of decision trees. In the study above, the RF classifier produced the highest accuracy and was finally chosen. RF classifier is effective because of its insensitivity to noise or over classifying. RF classifier was employed with 50 classification trees based on a sensitivity test of 10, 20, 50, 100, 500 trees, because little performance improved after 50 trees to this study.
+
+* GEE is quite wonderful because there are tons of datasets cover the world and over the years, which is convenient for research of space-time evolution. Besides, user can design specific functions for their own studies and then repeat the analysis process easily.
+
+* From the perspective of GEE technology, the augmentation of GEE APIs and functions can be implemented with either JavaScript or Python. Python tools, such as image analysis and statistical modeling tools, can be easily to integrate with APIs of GEE to strength our functions. In addition, Pythons provides a more flexible environment to develop user-defined functions with more intuitive user interface in comparison with GEE's online Code Editor. Therefore, the integration of Python and GEE can realize more comprehensive and sophisticated sustainability algorithms, to provide better evaluation tools and to support flexible user interactions with the ESV estimation and sustainability modeling algorithms.
