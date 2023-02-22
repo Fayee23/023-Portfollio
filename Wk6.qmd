@@ -1,0 +1,51 @@
+# Week 6: Classification
+
+## Summary
+
+### Classified data in Action
+
+extract land cover from earth observation data
+
+* Urban expansion
+
+* Air pollution and LULC
+
+* Urban green spaces
+
+* Monitoring forests + illegal logging
+ tree
+* Forest fires
+
+### Classify remote sense data
+
+a. Expert systems
+
+b. Classification and regression trees (CART)
+
+* classification trees
+
+* regression trees: subset the data into smaller chunks if linear regression doesn't fit
+
+![how data subseted](img06/regressiontree.png){#fig-RegressionTreeProcess}
+
+  * each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be over fitting
+  
+  * To prevent over fitting we can set a minimum number of observations before splitting the data again.
+  
+  * Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf
+  
+> Tree score = SSR + tree penalty (alpha) * T (number of leaves)
+  
+c. Random forests: many classification decision trees
+
+Make decision tree from random number of variables (never all of them), and then repeat
+
+![Source:[Rosaria Silipo](https://towardsdatascience.com/from-a-single-decision-tree-to-a-random-forest-b9523be65147)](img06/RandomForest.png){#fig-RandomForest}
+
+* For each tree about 70% of the training data is used in the bootstrap, then test the rest data (OOB data), repeat for all OOB samples and the one getting most votes wins
+
+d. Image classification
+
+can add everything such as texture
+
+
