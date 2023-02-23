@@ -20,6 +20,10 @@ extract land cover from earth observation data
 
 a. Expert systems
 
+* a system that uses human knowledge to solve problems that normally require human intelligence
+
+* example: machine learning
+
 b. Classification and regression trees (CART)
 
 * classification trees
@@ -28,11 +32,13 @@ b. Classification and regression trees (CART)
 
 ![how data subseted](img06/regressiontree.png){#fig-RegressionTreeProcess}
 
-  * each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be over fitting
+    * each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
   
-  * To prevent over fitting we can set a minimum number of observations before splitting the data again.
+    ![Source: [Seema Singh](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)](img06/overfitting.png){#fig-overfitting}
   
-  * Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf
+    * To prevent over fitting we can set a minimum number of observations before splitting the data again.
+  
+    * Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf
   
 > Tree score = SSR + tree penalty (alpha) * T (number of leaves)
   
@@ -44,8 +50,18 @@ Make decision tree from random number of variables (never all of them), and then
 
 * For each tree about 70% of the training data is used in the bootstrap, then test the rest data (OOB data), repeat for all OOB samples and the one getting most votes wins
 
+* Often the number of variables per tree is calculated from square root of variables in the original data.
+
 d. Image classification
 
-can add everything such as texture
+* Turn every pixel in the image into one of a pre-defined categorical classification
 
+![From pixels to objects](img06/imageClassification.png)
 
+* Category:
+
+![mindmap of image classification](img06/mindmap.png)
+
+* can add everything such as texture
+
+e. Support Vector Machine (SVM)
