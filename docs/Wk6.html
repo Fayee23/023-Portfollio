@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -105,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Wk2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Xaringan and Quarto</span></a>
+  <a href="./Wk2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2: Xaringan</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -152,6 +171,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#classified-data-in-action" id="toc-classified-data-in-action" class="nav-link" data-scroll-target="#classified-data-in-action"><span class="toc-section-number">6.1.1</span>  Classified data in Action</a></li>
   <li><a href="#classify-remote-sense-data" id="toc-classify-remote-sense-data" class="nav-link" data-scroll-target="#classify-remote-sense-data"><span class="toc-section-number">6.1.2</span>  Classify remote sense data</a></li>
   </ul></li>
+  <li><a href="#practical" id="toc-practical" class="nav-link" data-scroll-target="#practical"><span class="toc-section-number">6.2</span>  Practical</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.3</span>  Application</a>
+  <ul class="collapse">
+  <li><a href="#policy-background" id="toc-policy-background" class="nav-link" data-scroll-target="#policy-background"><span class="toc-section-number">6.3.1</span>  Policy background</a></li>
+  <li><a href="#data-and-methodology" id="toc-data-and-methodology" class="nav-link" data-scroll-target="#data-and-methodology"><span class="toc-section-number">6.3.2</span>  Data and Methodology</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="toc-section-number">6.3.3</span>  Results</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7</span>  Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -209,13 +236,19 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">Figure&nbsp;6.1: how data subseted</figcaption><p></p>
 </figure>
 </div>
-<pre><code>* each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
-
-![Source: [Seema Singh](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)](img06/overfitting.png){#fig-overfitting}
-
-* To prevent over fitting we can set a minimum number of observations before splitting the data again.
-
-* Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf</code></pre>
+<ul>
+<li>each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be <strong>over fitting</strong></li>
+</ul>
+<div id="fig-overfitting" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img06/overfitting.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.2: Source: <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">Seema Singh</a></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>To prevent over fitting we can set a minimum number of observations before splitting the data again.</p></li>
+<li><p>Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf</p></li>
+</ul>
 <blockquote class="blockquote">
 <p>Tree score = SSR + tree penalty (alpha) * T (number of leaves)</p>
 </blockquote>
@@ -226,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-RandomForest" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img06/RandomForest.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;6.2: Source:<a href="https://towardsdatascience.com/from-a-single-decision-tree-to-a-random-forest-b9523be65147">Rosaria Silipo</a></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.3: Source:<a href="https://towardsdatascience.com/from-a-single-decision-tree-to-a-random-forest-b9523be65147">Rosaria Silipo</a></figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -260,9 +293,105 @@ ul.task-list li input[type="checkbox"] {
 <ol start="5" type="a">
 <li>Support Vector Machine (SVM)</li>
 </ol>
-
-
+<p>a linear binary classifier, like logistic regression, classify training data by <strong>maximum margin classifier</strong>.</p>
+<div id="fig-SVM" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img06/SVM.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.4: Source: <a href="https://www.intechopen.com/chapters/64971">Núñez et al.&nbsp;2018</a></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>Underlying theory: structural risk minimisation, minimise error on unseen data with no assumptions on the distribution</li>
+</ul>
 </section>
+</section>
+<section id="practical" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="practical"><span class="header-section-number">6.2</span> Practical</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img06/pracWorkflow.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Workflow for classification</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="application" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="application"><span class="header-section-number">6.3</span> Application</h2>
+<p><span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span> evaluated the performance of two machine learning algorithms, i.e., support vector machine (SVM) and random forest (RF), for slum mapping in support of the slum mapping campaign in Bandung, Indonesia. Recognizing the complexity in differentiating slum and formal areas in Indonesia, the study used a combination of spectral, contextual, and morphological features. In addition, sequential feature selection (SFS) combined with the Hilbert–Schmidt independence criterion (HSIC) was used to select significant features for classifying slums.</p>
+<section id="policy-background" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="policy-background"><span class="header-section-number">6.3.1</span> Policy background</h3>
+<p>The Indonesian government conducted a survey-based slum mapping (SBSM) program to reach the national target of “cities without slums” by 2019.</p>
+<p>To upgrade slum areas, the Indonesian government requires a consistent, detailed, correct, and timely method that meets the requirements specified in planning documents. However, inconsistencies and temporal delays are shortcomings of the SBSM undertaken by the Indonesian government, due to the dependency on the surveyor’s experiences and the complexity of the slum indicators set.</p>
+<p>By relying on such inconsistent maps, it will be difficult to monitor the national slum upgrading program’s progress.</p>
+<p>Remote sensing imagery combined with machine learning algorithms could support the reduction of these inconsistencies.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img06/slum-upgrading.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Slum upgrading program combined with SBSM, Source: <span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="data-and-methodology" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="data-and-methodology"><span class="header-section-number">6.3.2</span> Data and Methodology</h3>
+<ol type="a">
+<li>Data source</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img06/data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Data for this research, Source: <span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>For classification, pleiades images are mainly used.</p>
+<ol start="2" type="a">
+<li>Methodology</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img06/workflow.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Workflow, Source: <span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img06/classification.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Source: <span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="results" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">6.3.3</span> Results</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img06/result.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Comparison of classification results and ground truth, Source: <span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>Slums are in the red and green are non-slums. Blue circles show an example of misclassification in the tile with the highest accuracy.</p>
+<p>The overall accuracy of SVM is higher than RF, but the classified map of SVM is noisier. Thereby, the RF-classifies map with the feature selection method is selected.</p>
+</section>
+</section>
+<section id="reflection" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Reflection</h1>
+<p>Each method of classification has its own advantage and disadvantage, so we need to select those methods according our objective of research. In the study above <span class="citation" data-cites="leonita2018">(<a href="references.html#ref-leonita2018" role="doc-biblioref">Leonita et al. 2018</a>)</span>, both SVM and RF classification results show misclassification, particularly for small formal structures. This is due to similar morphological characteristics and roof material of both categories, thus with an image, we can only capture morphological slums<span class="citation" data-cites="wurm2018a taubenbock2018">(<a href="references.html#ref-wurm2018a" role="doc-biblioref">Wurm and Taubenböck 2018</a>; <a href="references.html#ref-taubenbock2018" role="doc-biblioref">Taubenböck, Kraff, and Wurm 2018</a>)</span>. Furthermore, the uncertainty of slum boundaries plays a role that slums and nonslums have fuzzy boundaries.</p>
+<p>Therefore, I think it is necessary to combine with the extraction of building information (see application section in <a href="Wk2.html">week&nbsp;<span>2</span></a>) after a general classification. With the data of building density, building sizes and height, and average building distance, the slum boundary can be confirm at block level and even individual buildings level. This will improve the accuracy of slums detection.</p>
+<p>Interestingly, I find <span class="citation" data-cites="taubenbock2014">Taubenböck and Kraff (<a href="references.html#ref-taubenbock2014" role="doc-biblioref">2014</a>)</span> has carried out a study identifying characteristic physical features of the built environment that allows defining slum areas. Using highresolution optical satellite data, parameters such as building density, building heights, and sizes are used to differentiate between slums and formal settlements.</p>
+<p>Going back to the lecture content, classification is complicated but powerful. It reduces a large amount of manual work.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-leonita2018" class="csl-entry" role="doc-biblioentry">
+Leonita, Gina, Monika Kuffer, Richard Sliuzas, and Claudio Persello. 2018. <span>“Machine <span>Learning-Based Slum Mapping</span> in <span>Support</span> of <span>Slum Upgrading Programs</span>: <span>The Case</span> of <span>Bandung City</span>, <span>Indonesia</span>.”</span> <em>Remote Sensing</em> 10 (10): 1522. <a href="https://doi.org/10.3390/rs10101522">https://doi.org/10.3390/rs10101522</a>.
+</div>
+<div id="ref-taubenbock2014" class="csl-entry" role="doc-biblioentry">
+Taubenböck, H., and N. J. Kraff. 2014. <span>“The Physical Face of Slums: A Structural Comparison of Slums in <span>Mumbai</span>, <span>India</span>, Based on Remotely Sensed Data.”</span> <em>Journal of Housing and the Built Environment</em> 29 (1): 15–38. <a href="https://doi.org/10.1007/s10901-013-9333-x">https://doi.org/10.1007/s10901-013-9333-x</a>.
+</div>
+<div id="ref-taubenbock2018" class="csl-entry" role="doc-biblioentry">
+Taubenböck, H., N. J. Kraff, and M. Wurm. 2018. <span>“The Morphology of the <span>Arrival City</span> - <span>A</span> Global Categorization Based on Literature Surveys and Remotely Sensed Data.”</span> <em>Applied Geography</em> 92 (March): 150–67. <a href="https://doi.org/10.1016/j.apgeog.2018.02.002">https://doi.org/10.1016/j.apgeog.2018.02.002</a>.
+</div>
+<div id="ref-wurm2018a" class="csl-entry" role="doc-biblioentry">
+Wurm, M., and H. Taubenböck. 2018. <span>“Detecting Social Groups from Space <span>Assessment</span> of Remote Sensing-Based Mapped Morphological Slums Using Income Data.”</span> <em>Remote Sensing Letters</em> 9 (1): 41–50. <a href="https://doi.org/10.1080/2150704X.2017.1384586">https://doi.org/10.1080/2150704X.2017.1384586</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

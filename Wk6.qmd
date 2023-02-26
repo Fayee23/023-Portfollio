@@ -32,13 +32,13 @@ b. Classification and regression trees (CART)
 
 ![how data subseted](img06/regressiontree.png){#fig-RegressionTreeProcess}
 
-    * each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
+  * each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
   
-    ![Source: [Seema Singh](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)](img06/overfitting.png){#fig-overfitting}
+![Source: [Seema Singh](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)](img06/overfitting.png){#fig-overfitting}
   
-    * To prevent over fitting we can set a minimum number of observations before splitting the data again.
+  * To prevent over fitting we can set a minimum number of observations before splitting the data again.
   
-    * Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf
+  * Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf
   
 > Tree score = SSR + tree penalty (alpha) * T (number of leaves)
   
@@ -75,7 +75,7 @@ a linear binary classifier, like logistic regression, classify training data by 
 
 ## Practical
 
-workflow
+![Workflow for classification](img06/pracWorkflow.png)
 
 
 
@@ -95,14 +95,34 @@ Remote sensing imagery combined with machine learning algorithms could support t
 
 ![Slum upgrading program combined with SBSM, Source: @leonita2018](img06/slum-upgrading.png)
 
-### Methodology
+### Data and Methodology
+
+a. Data source
+
+![Data for this research, Source: @leonita2018](img06/data.png)
+
+For classification, pleiades images are mainly used.
+
+b. Methodology
 
 ![Workflow, Source: @leonita2018](img06/workflow.png)
 
+![Source: @leonita2018](img06/classification.png)
+
 ### Results
 
+![Comparison of classification results and ground truth, Source: @leonita2018](img06/result.png)
 
+Slums are in the red and green are non-slums. Blue circles show an example of misclassification in the tile with the highest accuracy.
+
+The overall accuracy of SVM is higher than RF, but the classified map of SVM is noisier. Thereby, the RF-classifies map with the feature selection method is selected.
 
 # Reflection
 
+Each method of classification has its own advantage and disadvantage, so we need to select those methods according our objective of research. In the study above [@leonita2018], both SVM and RF classification results show misclassification, particularly for small formal structures. This is due to similar morphological characteristics and roof material of both categories, thus with an image, we can only capture morphological slums[@wurm2018a; @taubenbock2018]. Furthermore, the uncertainty of slum boundaries plays a role that slums and nonslums have fuzzy boundaries.
 
+Therefore, I think it is necessary to combine with the extraction of building information (see application section in [week @sec-week2-xaringan presentation]) after a general classification. With the data of building density, building sizes and height, and average building distance, the slum boundary can be confirm at block level and even individual buildings level. This will improve the accuracy of slums detection.
+
+Interestingly, I find @taubenbock2014 has carried out a study identifying characteristic physical features of the built environment that allows defining slum areas. Using highresolution optical satellite data, parameters such as building density, building heights, and sizes are used to differentiate between slums and formal settlements.
+
+Going back to the lecture content, classification is complicated but powerful. It reduces a large amount of manual work.

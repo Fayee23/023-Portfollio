@@ -44,14 +44,14 @@
   {
     "objectID": "Wk2.html",
     "href": "Wk2.html",
-    "title": "2  Week 2: Xaringan and Quarto",
+    "title": "2  Week 2: Xaringan",
     "section": "",
     "text": "My short presentation on LiDAR sensor is available here."
   },
   {
     "objectID": "Wk2.html#useful-resource",
     "href": "Wk2.html#useful-resource",
-    "title": "2  Week 2: Xaringan and Quarto",
+    "title": "2  Week 2: Xaringan",
     "section": "2.2 Useful resource",
     "text": "2.2 Useful resource\n\nXaringan operation instruction\nXaringan CSS theme generator\nChapter 7 xaringan Presentations"
   },
@@ -137,7 +137,7 @@
     "href": "Wk6.html",
     "title": "6  Week 6: Classification",
     "section": "",
-    "text": "extract land cover from earth observation data\n\nUrban expansion\nAir pollution and LULC\nUrban green spaces\nMonitoring forests + illegal logging tree\nForest fires\n\n\n\n\n\nExpert systems\n\n\na system that uses human knowledge to solve problems that normally require human intelligence\nexample: machine learning\n\n\nClassification and regression trees (CART)\n\n\nclassification trees\nregression trees: subset the data into smaller chunks if linear regression doesn’t fit\n\n\n\n\nFigure 6.1: how data subseted\n\n\n* each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**\n\n![Source: [Seema Singh](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)](img06/overfitting.png){#fig-overfitting}\n\n* To prevent over fitting we can set a minimum number of observations before splitting the data again.\n\n* Or limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf\n\nTree score = SSR + tree penalty (alpha) * T (number of leaves)\n\n\nRandom forests: many classification decision trees\n\nMake decision tree from random number of variables (never all of them), and then repeat\n\n\n\nFigure 6.2: Source:Rosaria Silipo\n\n\n\nFor each tree about 70% of the training data is used in the bootstrap, then test the rest data (OOB data), repeat for all OOB samples and the one getting most votes wins\nOften the number of variables per tree is calculated from square root of variables in the original data.\n\n\nImage classification\n\n\nTurn every pixel in the image into one of a pre-defined categorical classification\n\n\n\n\nFrom pixels to objects\n\n\n\nCategory:\n\n\n\n\nmindmap of image classification\n\n\n\ncan add everything such as texture\n\n\nSupport Vector Machine (SVM)"
+    "text": "extract land cover from earth observation data\n\nUrban expansion\nAir pollution and LULC\nUrban green spaces\nMonitoring forests + illegal logging tree\nForest fires\n\n\n\n\n\nExpert systems\n\n\na system that uses human knowledge to solve problems that normally require human intelligence\nexample: machine learning\n\n\nClassification and regression trees (CART)\n\n\nclassification trees\nregression trees: subset the data into smaller chunks if linear regression doesn’t fit\n\n\n\n\nFigure 6.1: how data subseted\n\n\n\neach leaf is a regression model, if we have a leaf with just one person or one pixel value it will be over fitting\n\n\n\n\nFigure 6.2: Source: Seema Singh\n\n\n\nTo prevent over fitting we can set a minimum number of observations before splitting the data again.\nOr limit how trees grow by pruning the weakest link with tree score: calculate the sum of the squared residuals (SSR) before and after removing a leaf\n\n\nTree score = SSR + tree penalty (alpha) * T (number of leaves)\n\n\nRandom forests: many classification decision trees\n\nMake decision tree from random number of variables (never all of them), and then repeat\n\n\n\nFigure 6.3: Source:Rosaria Silipo\n\n\n\nFor each tree about 70% of the training data is used in the bootstrap, then test the rest data (OOB data), repeat for all OOB samples and the one getting most votes wins\nOften the number of variables per tree is calculated from square root of variables in the original data.\n\n\nImage classification\n\n\nTurn every pixel in the image into one of a pre-defined categorical classification\n\n\n\n\nFrom pixels to objects\n\n\n\nCategory:\n\n\n\n\nmindmap of image classification\n\n\n\ncan add everything such as texture\n\n\nSupport Vector Machine (SVM)\n\na linear binary classifier, like logistic regression, classify training data by maximum margin classifier.\n\n\n\nFigure 6.4: Source: Núñez et al. 2018\n\n\n\nUnderlying theory: structural risk minimisation, minimise error on unseen data with no assumptions on the distribution"
   },
   {
     "objectID": "Wk5.html#reflection",
@@ -145,5 +145,19 @@
     "title": "5  Week5: Google Earth Engine",
     "section": "5.3 Reflection",
     "text": "5.3 Reflection\n\nThere is difference in accuracy among those function of decision trees. In the study above, the RF classifier produced the highest accuracy and was finally chosen. RF classifier is effective because of its insensitivity to noise or over classifying. RF classifier was employed with 50 classification trees based on a sensitivity test of 10, 20, 50, 100, 500 trees, because little performance improved after 50 trees to this study.\nGEE is quite wonderful because there are tons of datasets cover the world and over the years, which is convenient for research of space-time evolution. Besides, user can design specific functions for their own studies and then repeat the analysis process easily.\nFrom the perspective of GEE technology, the augmentation of GEE APIs and functions can be implemented with either JavaScript or Python. Python tools, such as image analysis and statistical modeling tools, can be easily to integrate with APIs of GEE to strength our functions. In addition, Pythons provides a more flexible environment to develop user-defined functions with more intuitive user interface in comparison with GEE’s online Code Editor. Therefore, the integration of Python and GEE can realize more comprehensive and sophisticated sustainability algorithms, to provide better evaluation tools and to support flexible user interactions with the ESV estimation and sustainability modeling algorithms.\n\n\n\n\n\nLiang, Jianyuan, Yichun Xie, Zongyao Sha, and Alicia Zhou. 2020. “Modeling Urban Growth Sustainability in the Cloud by Augmenting Google Earth Engine (GEE).” Computers, Environment and Urban Systems 84 (November): 101542. https://doi.org/10.1016/j.compenvurbsys.2020.101542."
+  },
+  {
+    "objectID": "Wk6.html#practical",
+    "href": "Wk6.html#practical",
+    "title": "6  Week 6: Classification",
+    "section": "6.2 Practical",
+    "text": "6.2 Practical\n\n\n\nWorkflow for classification"
+  },
+  {
+    "objectID": "Wk6.html#application",
+    "href": "Wk6.html#application",
+    "title": "6  Week 6: Classification",
+    "section": "6.3 Application",
+    "text": "6.3 Application\nLeonita et al. (2018) evaluated the performance of two machine learning algorithms, i.e., support vector machine (SVM) and random forest (RF), for slum mapping in support of the slum mapping campaign in Bandung, Indonesia. Recognizing the complexity in differentiating slum and formal areas in Indonesia, the study used a combination of spectral, contextual, and morphological features. In addition, sequential feature selection (SFS) combined with the Hilbert–Schmidt independence criterion (HSIC) was used to select significant features for classifying slums.\n\n6.3.1 Policy background\nThe Indonesian government conducted a survey-based slum mapping (SBSM) program to reach the national target of “cities without slums” by 2019.\nTo upgrade slum areas, the Indonesian government requires a consistent, detailed, correct, and timely method that meets the requirements specified in planning documents. However, inconsistencies and temporal delays are shortcomings of the SBSM undertaken by the Indonesian government, due to the dependency on the surveyor’s experiences and the complexity of the slum indicators set.\nBy relying on such inconsistent maps, it will be difficult to monitor the national slum upgrading program’s progress.\nRemote sensing imagery combined with machine learning algorithms could support the reduction of these inconsistencies.\n\n\n\nSlum upgrading program combined with SBSM, Source: Leonita et al. (2018)\n\n\n\n\n6.3.2 Data and Methodology\n\nData source\n\n\n\n\nData for this research, Source: Leonita et al. (2018)\n\n\nFor classification, pleiades images are mainly used.\n\nMethodology\n\n\n\n\nWorkflow, Source: Leonita et al. (2018)\n\n\n\n\n\nSource: Leonita et al. (2018)\n\n\n\n\n6.3.3 Results\n\n\n\nComparison of classification results and ground truth, Source: Leonita et al. (2018)\n\n\nSlums are in the red and green are non-slums. Blue circles show an example of misclassification in the tile with the highest accuracy.\nThe overall accuracy of SVM is higher than RF, but the classified map of SVM is noisier. Thereby, the RF-classifies map with the feature selection method is selected."
   }
 ]
