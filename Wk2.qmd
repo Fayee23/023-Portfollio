@@ -1,4 +1,4 @@
-# Week 2: Xaringan and Quarto {.sec_wk2}
+# Week 2: Xaringan {#sec-week2-xaringan .sec_wk2}
 
 ## Xaringan presentation
 
