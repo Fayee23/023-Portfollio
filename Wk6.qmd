@@ -56,7 +56,7 @@ d.  Image classification
 
 -   Turn every pixel in the image into one of a pre-defined categorical classification
 
-![From pixels to objects](img06/imageClassification.png)
+![From pixels to objects](img06/imageClassification.png){#fig-imageclassification}
 
 -   Category:
 
@@ -64,7 +64,7 @@ d.  Image classification
 
     -   **unsupervised classification**: the algorithm clusters pixels based on their spectral properties and then assigns each cluster to a land cover or land use class.
 
-![mindmap of image classification](img06/mindmap.png)
+![mindmap of image classification](img06/mindmap.png){#fig-mindmap-imageclassification}
 
 -   can add everything such as texture
 
@@ -78,7 +78,7 @@ a linear binary classifier, like logistic regression, classify training data by 
 
 ### Practical
 
-![Workflow for classification](img06/pracWorkflow.png)
+![Workflow for classification](img06/pracWorkflow.png){#fig-workflow-classification}
 
 ## Application
 
@@ -94,25 +94,25 @@ By relying on such inconsistent maps, it will be difficult to monitor the nation
 
 Remote sensing imagery combined with machine learning algorithms could support the reduction of these inconsistencies.
 
-![Slum upgrading program combined with SBSM, Source: @leonita2018](img06/slum-upgrading.png)
+![Slum upgrading program combined with SBSM, Source: @leonita2018](img06/slum-upgrading.png){#fig-slum-upgrading}
 
 ### Data and Methodology
 
 a.  Data source
 
-![Data for this research, Source: @leonita2018](img06/data.png)
+![Data for this research, Source: @leonita2018](img06/data.png){#fig-data-slum}
 
 For classification, pleiades images are mainly used.
 
 b.  Methodology
 
-![Workflow, Source: @leonita2018](img06/workflow.png)
+![Workflow, Source: @leonita2018](img06/workflow.png){#fig-workflow-slum}
 
-![Source: @leonita2018](img06/classification.png)
+![Source: @leonita2018](img06/classification.png){#fig-classification}
 
 ### Results
 
-![Comparison of classification results and ground truth, Source: @leonita2018](img06/result.png)
+![Comparison of classification results and ground truth, Source: @leonita2018](img06/result.png){#fig-classification-result}
 
 Slums are in the red and green are non-slums. Blue circles show an example of misclassification in the tile with the highest accuracy.
 

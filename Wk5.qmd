@@ -2,7 +2,7 @@
 
 ## Summary
 
-![mind map](img05/mindchart.png)
+![mind map](img05/mindchart.png){#fig-mindmap-GEE}
 
 GEE has a cloud-based geospatial processing capability and accessibility to a large collection of geospatial datasets, which enables environmental and urban studies conveniently and efficiently.
 
@@ -16,7 +16,7 @@ To demonstrate how to detect time-series (yearly from 2005 to 2016) LULC changes
 
 ### Methological
 
-![Source: @liang2020](img05/Framework.png)
+![Source: @liang2020](img05/Framework.png){#fig-ESVworkflow}
 
 a.  image retrieval and preprocessing with the main tasks of data normalization and time-series image stacking
 
@@ -34,13 +34,15 @@ e.  visualization and analysis of the modeling outcomes
 
 ### Result
 
-a.  LULC ![Source: ](img05/LULCresult.png)
+a.  LULC 
+
+![Source:](img05/LULCresult.png){#fig-LULCresult}
 
 urban built-up area in the city center of Hohhot expanded a lot from 2005 to 2016, and several suburban centers and distant areas observed apparent urban expansion.
 
 b.  ESV estimation and urban sustainability modeling
 
-![Source: @liang2020](img05/SI.png)
+![Source: @liang2020](img05/SI.png){#fig-ESVresult}
 
 The dynamics of SI displayed a three-phased change. From 2005 to 2008, despite continuous growth of GDP and PCNI, SI reduced sharply in response to the dramatic decline of ESVd, especially in 2008. From 2009 to 2013, SI was considerably improved, although it showed obvious fluctuation. The final phase of SI change started in 2014. Though SI was positive, the increase percentage displayed a slightly decreasing trend.
 
@@ -50,6 +52,6 @@ The dynamics of SI displayed a three-phased change. From 2005 to 2008, despite c
 
 -   GEE is quite wonderful because there are tons of datasets cover the world and over the years, which is convenient for research of space-time evolution. Besides, user can design specific functions for their own studies and then repeat the analysis process easily.
 
-* One of the main advantages of Google Earth Engine is its ability to process large amounts of satellite data quickly and efficiently. This makes it a valuable tool for a wide range of applications, including environmental monitoring, disaster response, and land use planning.
+-   One of the main advantages of Google Earth Engine is its ability to process large amounts of satellite data quickly and efficiently. This makes it a valuable tool for a wide range of applications, including environmental monitoring, disaster response, and land use planning.
 
 -   From the perspective of GEE technology, the augmentation of GEE APIs and functions can be implemented with either JavaScript or Python. Python tools, such as image analysis and statistical modeling tools, can be easily to integrate with APIs of GEE to strength our functions. In addition, Pythons provides a more flexible environment to develop user-defined functions with more intuitive user interface in comparison with GEE's online Code Editor. Therefore, the integration of Python and GEE can realize more comprehensive and sophisticated sustainability algorithms, to provide better evaluation tools and to support flexible user interactions with the ESV estimation and sustainability modeling algorithms.
