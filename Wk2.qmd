@@ -2,7 +2,7 @@
 
 ## Xaringan presentation
 
-My short presentation on LiDAR sensor is available [here](https://fayee23.github.io/Remote_sensing_wk2/).
+My short presentation about the application of LiDAR sensor is available [here](https://fayee23.github.io/Remote_sensing_wk2/).
 
 ## Useful resource
 

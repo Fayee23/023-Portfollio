@@ -6,7 +6,7 @@ The Sustainable Development Goals (SDGs), also known as the Global Goals, were a
 
 > By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations
 
-Here, I focus on the Storm Water Management Model (SWMM) which can be able to solve the water-related disasters mentioned above. To achieve efficient storm water management, Sydney has a strategy in the *@2020b*.
+Here, I focus on the Storm Water Management Model (SWMM) which can be able to solve the water-related disasters mentioned above. To achieve efficient storm water management, Sydney has a strategy in the @2020b.
 
 > Explore options for developing artificial intelligence capabilities to drive efficient resource use, and advance the circular economy. Machine learning capabilities can analyse data collected from sensor networks to **monitor quality of urban conditions** and automate decisions. For example, a smart stormwater system could determine cleaning and maintenance schedules and identify flooding risks, or smart irrigation can help us manage water use to green the city.
 
@@ -20,12 +20,12 @@ This strategy not only solve the challenge of storm water management effectively
 
 LiDAR
 
-* Platform: Cessna C207 
-* Laser scanner: ALTM3100-C (Optec) 
-* Laser pulse frequency: 50 000 Hz 
-* Altitude: 2000 m
-* Scanning frequency: 30 Hz
-* Point density: 1/m2
+-   Platform: Cessna C207
+-   Laser scanner: ALTM3100-C (Optec)
+-   Laser pulse frequency: 50 000 Hz
+-   Altitude: 2000 m
+-   Scanning frequency: 30 Hz
+-   Point density: 1/m2
 
 ### Methodology
 
@@ -49,12 +49,12 @@ Then, distinguish between vegetation and building areas by Delaunay triangulatio
 
 ## Reflection
 
-In this era of information, city governance pursue high efficiency and environmental sustainability, so that remote sensing plays an essential role to provide monitoring information about city's condition. 
+In this era of information, city governance pursue high efficiency and environmental sustainability, so that remote sensing plays an essential role to provide monitoring information about city's condition.
 
-With the support of remote sensing data, people can predict disasters, monitor pollution and estimate resources, and then conduct relevant policy to solve it, which help to reduce the cost brought by future environmental pressure. 
+With the support of remote sensing data, people can predict disasters, monitor pollution and estimate resources, and then conduct relevant policy to solve it, which help to reduce the cost brought by future environmental pressure.
 
-In the case of flooding simulation [@tsubaki2010], LiDAR data provides a high exquisite precision to predict potential flooding areas or urban water logging places. For government, massive construction of grey infrastructure and flooding prevention can be put forward in these areas, which can make use of those public expenditure and reduce the potential risk. 
+In the case of flooding simulation [@tsubaki2010], LiDAR data provides a high exquisite precision to predict potential flooding areas or urban water logging places. For government, massive construction of grey infrastructure and flooding prevention can be put forward in these areas, which can make use of those public expenditure and reduce the potential risk.
 
-And this application of LiDAR data can partially reach the storm water management policy of Sydney. With the identification of potential flooding area with different level, differential management can be constructed at the most essential places without the waste of cost and resource. 
+And this application of LiDAR data can partially reach the storm water management policy of Sydney. With the identification of potential flooding area with different level, differential management can be constructed at the most essential places without the waste of cost and resource.
 
-However, if we want to monitor the real-time condition of urban and those infrastructure, it is doubtable that whether LiDAR data can support it or not. It might be a large amount of financial cost. And to respond the condition changing and decide automatically, machine learning and Artificial Intelligence capabilities are needed, which is a long road to expore. 
+However, if we want to monitor the real-time condition of urban and those infrastructure, it is doubtable that whether LiDAR data can support it or not. It might be a large amount of financial cost. And to respond the condition changing and decide automatically, machine learning and Artificial Intelligence capabilities are needed, which is a long road to expore.

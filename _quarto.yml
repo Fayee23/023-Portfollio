@@ -14,7 +14,8 @@ book:
     - Wk4.qmd
     - Wk5.qmd
     - Wk6.qmd
-    - summary.qmd
+    - Wk7.qmd
+    - Wk8.qmd
     - references.qmd
 
 bibliography: references.bib

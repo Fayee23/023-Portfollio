@@ -49,7 +49,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
+<link href="./Wk7.html" rel="next">
 <link href="./Wk5.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -149,7 +149,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./Wk7.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Questions and Accuracy of Classification</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Wk8.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8:</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -170,15 +175,15 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#classified-data-in-action" id="toc-classified-data-in-action" class="nav-link" data-scroll-target="#classified-data-in-action"><span class="toc-section-number">6.1.1</span>  Classified data in Action</a></li>
   <li><a href="#classify-remote-sense-data" id="toc-classify-remote-sense-data" class="nav-link" data-scroll-target="#classify-remote-sense-data"><span class="toc-section-number">6.1.2</span>  Classify remote sense data</a></li>
+  <li><a href="#practical" id="toc-practical" class="nav-link" data-scroll-target="#practical"><span class="toc-section-number">6.1.3</span>  Practical</a></li>
   </ul></li>
-  <li><a href="#practical" id="toc-practical" class="nav-link" data-scroll-target="#practical"><span class="toc-section-number">6.2</span>  Practical</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.3</span>  Application</a>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.2</span>  Application</a>
   <ul class="collapse">
-  <li><a href="#policy-background" id="toc-policy-background" class="nav-link" data-scroll-target="#policy-background"><span class="toc-section-number">6.3.1</span>  Policy background</a></li>
-  <li><a href="#data-and-methodology" id="toc-data-and-methodology" class="nav-link" data-scroll-target="#data-and-methodology"><span class="toc-section-number">6.3.2</span>  Data and Methodology</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="toc-section-number">6.3.3</span>  Results</a></li>
+  <li><a href="#policy-background" id="toc-policy-background" class="nav-link" data-scroll-target="#policy-background"><span class="toc-section-number">6.2.1</span>  Policy background</a></li>
+  <li><a href="#data-and-methodology" id="toc-data-and-methodology" class="nav-link" data-scroll-target="#data-and-methodology"><span class="toc-section-number">6.2.2</span>  Data and Methodology</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="toc-section-number">6.2.3</span>  Results</a></li>
   </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7</span>  Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">6.3</span>  Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -228,8 +233,7 @@ div.csl-indent {
 </ol>
 <ul>
 <li><p>classification trees</p></li>
-<li><p>regression trees: subset the data into smaller chunks if linear regression doesn’t fit</p></li>
-</ul>
+<li><p>regression trees: subset the data into smaller chunks if linear regression doesn’t fit</p>
 <div id="fig-RegressionTreeProcess" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img06/regressiontree.png" class="img-fluid figure-img"></p>
@@ -242,7 +246,7 @@ div.csl-indent {
 <div id="fig-overfitting" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="img06/overfitting.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;6.2: Source: <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">Seema Singh</a></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.2: Source: Seema Singh</figcaption><p></p>
 </figure>
 </div>
 <ul>
@@ -251,7 +255,8 @@ div.csl-indent {
 </ul>
 <blockquote class="blockquote">
 <p>Tree score = SSR + tree penalty (alpha) * T (number of leaves)</p>
-</blockquote>
+</blockquote></li>
+</ul>
 <ol start="3" type="a">
 <li>Random forests: many classification decision trees</li>
 </ol>
@@ -279,7 +284,11 @@ div.csl-indent {
 </figure>
 </div>
 <ul>
-<li>Category:</li>
+<li><p>Category:</p>
+<ul>
+<li><p><strong>supervised classification</strong>: the user selects training samples for each land cover or land use class, and then an algorithm is used to classify the remaining pixels based on their spectral properties</p></li>
+<li><p><strong>unsupervised classification</strong>: the algorithm clusters pixels based on their spectral properties and then assigns each cluster to a land cover or land use class.</p></li>
+</ul></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -304,9 +313,8 @@ div.csl-indent {
 <li>Underlying theory: structural risk minimisation, minimise error on unseen data with no assumptions on the distribution</li>
 </ul>
 </section>
-</section>
-<section id="practical" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="practical"><span class="header-section-number">6.2</span> Practical</h2>
+<section id="practical" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="practical"><span class="header-section-number">6.1.3</span> Practical</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img06/pracWorkflow.png" class="img-fluid figure-img"></p>
@@ -314,11 +322,12 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="application" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="application"><span class="header-section-number">6.3</span> Application</h2>
+</section>
+<section id="application" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
 <p><span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span> evaluated the performance of two machine learning algorithms, i.e., support vector machine (SVM) and random forest (RF), for slum mapping in support of the slum mapping campaign in Bandung, Indonesia. Recognizing the complexity in differentiating slum and formal areas in Indonesia, the study used a combination of spectral, contextual, and morphological features. In addition, sequential feature selection (SFS) combined with the Hilbert–Schmidt independence criterion (HSIC) was used to select significant features for classifying slums.</p>
-<section id="policy-background" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="policy-background"><span class="header-section-number">6.3.1</span> Policy background</h3>
+<section id="policy-background" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="policy-background"><span class="header-section-number">6.2.1</span> Policy background</h3>
 <p>The Indonesian government conducted a survey-based slum mapping (SBSM) program to reach the national target of “cities without slums” by 2019.</p>
 <p>To upgrade slum areas, the Indonesian government requires a consistent, detailed, correct, and timely method that meets the requirements specified in planning documents. However, inconsistencies and temporal delays are shortcomings of the SBSM undertaken by the Indonesian government, due to the dependency on the surveyor’s experiences and the complexity of the slum indicators set.</p>
 <p>By relying on such inconsistent maps, it will be difficult to monitor the national slum upgrading program’s progress.</p>
@@ -330,8 +339,8 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="data-and-methodology" class="level3" data-number="6.3.2">
-<h3 data-number="6.3.2" class="anchored" data-anchor-id="data-and-methodology"><span class="header-section-number">6.3.2</span> Data and Methodology</h3>
+<section id="data-and-methodology" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="data-and-methodology"><span class="header-section-number">6.2.2</span> Data and Methodology</h3>
 <ol type="a">
 <li>Data source</li>
 </ol>
@@ -358,8 +367,8 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="results" class="level3" data-number="6.3.3">
-<h3 data-number="6.3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">6.3.3</span> Results</h3>
+<section id="results" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="results"><span class="header-section-number">6.2.3</span> Results</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img06/result.png" class="img-fluid figure-img"></p>
@@ -370,12 +379,13 @@ div.csl-indent {
 <p>The overall accuracy of SVM is higher than RF, but the classified map of SVM is noisier. Thereby, the RF-classifies map with the feature selection method is selected.</p>
 </section>
 </section>
-<section id="reflection" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Reflection</h1>
-<p>Each method of classification has its own advantage and disadvantage, so we need to select those methods according our objective of research. In the study above <span class="citation" data-cites="leonita2018">(<a href="references.html#ref-leonita2018" role="doc-biblioref">Leonita et al. 2018</a>)</span>, both SVM and RF classification results show misclassification, particularly for small formal structures. This is due to similar morphological characteristics and roof material of both categories, thus with an image, we can only capture morphological slums<span class="citation" data-cites="wurm2018a taubenbock2018">(<a href="references.html#ref-wurm2018a" role="doc-biblioref">Wurm and Taubenböck 2018</a>; <a href="references.html#ref-taubenbock2018" role="doc-biblioref">Taubenböck, Kraff, and Wurm 2018</a>)</span>. Furthermore, the uncertainty of slum boundaries plays a role that slums and nonslums have fuzzy boundaries.</p>
+<section id="reflection" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
+<p>Each method of classification has its own advantage and disadvantage. The choice of classification method depends on the specific application and the characteristics of the data being analyzed. Some methods may be more accurate than others, depending on the complexity of the landscape and the spectral variability of the different land cover or land use classes.</p>
+<p>In the study above <span class="citation" data-cites="leonita2018">(<a href="references.html#ref-leonita2018" role="doc-biblioref">Leonita et al. 2018</a>)</span>, both SVM and RF classification results show misclassification, particularly for small formal structures. This is due to similar morphological characteristics and roof material of both categories, thus with an image, we can only capture morphological slums<span class="citation" data-cites="wurm2018a taubenbock2018">(<a href="references.html#ref-wurm2018a" role="doc-biblioref">Wurm and Taubenböck 2018</a>; <a href="references.html#ref-taubenbock2018" role="doc-biblioref">Taubenböck, Kraff, and Wurm 2018</a>)</span>. Furthermore, the uncertainty of slum boundaries plays a role that slums and nonslums have fuzzy boundaries.</p>
 <p>Therefore, I think it is necessary to combine with the extraction of building information (see application section in <a href="Wk2.html">week&nbsp;<span>2</span></a>) after a general classification. With the data of building density, building sizes and height, and average building distance, the slum boundary can be confirm at block level and even individual buildings level. This will improve the accuracy of slums detection.</p>
 <p>Interestingly, I find <span class="citation" data-cites="taubenbock2014">Taubenböck and Kraff (<a href="references.html#ref-taubenbock2014" role="doc-biblioref">2014</a>)</span> has carried out a study identifying characteristic physical features of the built environment that allows defining slum areas. Using highresolution optical satellite data, parameters such as building density, building heights, and sizes are used to differentiate between slums and formal settlements.</p>
-<p>Going back to the lecture content, classification is complicated but powerful. It reduces a large amount of manual work.</p>
+<p>Going back to the lecture content, classification is complicated but powerful. It is an important method used in remote sensing for analyzing and categorizing land cover and land use patterns, providing valuable information for environmental monitoring, land use planning, and natural resource management. Also, it reduces a large amount of manual work.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
@@ -500,8 +510,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Wk7.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Questions and Accuracy of Classification</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
