@@ -1,5 +1,7 @@
 # Week 4: Policy {.sec_wk4}
 
+*This is the assignment for week 4, exploring a case study with policy meeting international goals. And the application section is about how remote sensing data can contribute to this policy goal. I focus on the Storm Water Management Model in Sydney, wondering how to solve urban flooding effectively and reach the goal of sustainable development.*
+
 ## Summary
 
 The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity [@2015].It is an important and challenge topic in urban planning and policy in today's era that how to build a sustainable and resilient city of the future. One of the strategies for SDGs is as follow.

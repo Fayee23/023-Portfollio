@@ -1,4 +1,6 @@
-# Week 6: Classification {.sec_wk6}
+# Week 6: Classification 1 {#sec-week-6-classification-1 .sec_wk6}
+
+*This is the learning diary for week six, about the main method of remote sensing analysis. And the application is to identify the slum areas by two classification approach. *
 
 ## Summary
 

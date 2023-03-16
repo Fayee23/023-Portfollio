@@ -1,5 +1,7 @@
 # Week 1: Introduction to Remote Sensing {.sec_wk2}
 
+*This is the learning diary for week one, about the bacis concept of remote sensing. The application section is going to give a review on the application of remote sensing on urban.*
+
 ## Summary
 
 ### Sensor
@@ -150,15 +152,15 @@ An understanding of the population size and spatial distribution in urban areas 
 
 ### The importance of remote sensing
 
-* **Environmental monitoring**: Remote sensing can be used to monitor the environment and assess changes in land use, vegetation cover, water resources, and atmospheric conditions. This information is important for managing natural resources, predicting natural disasters, and understanding the impacts of climate change.
+-   **Environmental monitoring**: Remote sensing can be used to monitor the environment and assess changes in land use, vegetation cover, water resources, and atmospheric conditions. This information is important for managing natural resources, predicting natural disasters, and understanding the impacts of climate change.
 
-* **Mapping and planning**: Remote sensing data can be used to create accurate maps and support planning and development activities. For example, remote sensing can help identify suitable sites for new infrastructure or monitor urban growth.
+-   **Mapping and planning**: Remote sensing data can be used to create accurate maps and support planning and development activities. For example, remote sensing can help identify suitable sites for new infrastructure or monitor urban growth.
 
-* **Agriculture**: Remote sensing can help farmers optimize crop management by providing information about soil moisture, crop health, and yield potential. This information can help reduce water and fertilizer use and increase crop productivity.
+-   **Agriculture**: Remote sensing can help farmers optimize crop management by providing information about soil moisture, crop health, and yield potential. This information can help reduce water and fertilizer use and increase crop productivity.
 
-* **Disaster management**: Remote sensing can be used to support disaster management by providing information about the extent and severity of natural disasters such as floods, earthquakes, and wildfires. This information can help emergency responders prioritize their efforts and allocate resources effectively.
+-   **Disaster management**: Remote sensing can be used to support disaster management by providing information about the extent and severity of natural disasters such as floods, earthquakes, and wildfires. This information can help emergency responders prioritize their efforts and allocate resources effectively.
 
-* **National security**: Remote sensing can be used for intelligence gathering and monitoring of military activities. Satellites equipped with high-resolution cameras and other sensors can detect and track movement of troops, weapons, and other military equipment.
+-   **National security**: Remote sensing can be used for intelligence gathering and monitoring of military activities. Satellites equipped with high-resolution cameras and other sensors can detect and track movement of troops, weapons, and other military equipment.
 
 ### Remote sensing for planning
 

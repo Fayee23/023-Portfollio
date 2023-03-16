@@ -1,5 +1,7 @@
 # Week 3: Remote sensing data {.sec_wk3}
 
+*This is the learning diary for week three, finding how to get a better image from remotely sensed data.*
+
 ## Summary
 
 ### Corrections
@@ -106,8 +108,8 @@ Without field-measured reflectance spectra corresponding to the spectra in those
 
 ## Reflection
 
-* Remote sensing data are measurements of the Earth's surface or atmosphere collected by sensors on satellites or aircraft. These measurements can be affected by various factors such as atmospheric conditions, sensor calibration, and surface reflectance properties. Thus, it is essential to remove or minimize these effects and improve the accuracy of the data.
+-   Remote sensing data are measurements of the Earth's surface or atmosphere collected by sensors on satellites or aircraft. These measurements can be affected by various factors such as atmospheric conditions, sensor calibration, and surface reflectance properties. Thus, it is essential to remove or minimize these effects and improve the accuracy of the data.
 
-* The correction of remote sensing data is crucial for many applications, such as land use and land cover mapping, agriculture monitoring, and natural resources management. Accurate and reliable remote sensing data are essential for making informed decisions and policies based on scientific evidence.
+-   The correction of remote sensing data is crucial for many applications, such as land use and land cover mapping, agriculture monitoring, and natural resources management. Accurate and reliable remote sensing data are essential for making informed decisions and policies based on scientific evidence.
 
 -   Besides, data correction and enhancement are quite practical in real project, because we should know to what extent the data is being manipulated and how it is processed although we don't need to do the data correction by ourselves. Also, we may need to join the data sets and merge the imagery to show the research area or planning site.

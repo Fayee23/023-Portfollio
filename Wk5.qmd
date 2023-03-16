@@ -1,5 +1,7 @@
 # Week5: Google Earth Engine
 
+*This is the learning diary for week five, introducing Google Earth Engine. And the application is to build up urban sustainability model based on the concept of ecosystem service value.*
+
 ## Summary
 
 ![mind map](img05/mindchart.png){#fig-mindmap-GEE}
@@ -34,9 +36,9 @@ e.  visualization and analysis of the modeling outcomes
 
 ### Result
 
-a.  LULC 
+a.  LULC
 
-![Source:](img05/LULCresult.png){#fig-LULCresult}
+![Source: @liang2020](img05/LULCresult.png){#fig-LULCresult}
 
 urban built-up area in the city center of Hohhot expanded a lot from 2005 to 2016, and several suburban centers and distant areas observed apparent urban expansion.
 

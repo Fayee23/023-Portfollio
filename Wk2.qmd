@@ -1,5 +1,7 @@
 # Week 2: Xaringan {#sec-week2-xaringan .sec_wk2}
 
+*This is the assignment for week 2, a short presentation about LiDAR sensor.*
+
 ## Xaringan presentation
 
 My short presentation about the application of LiDAR sensor is available [here](https://fayee23.github.io/Remote_sensing_wk2/).
