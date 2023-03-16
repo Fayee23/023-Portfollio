@@ -1,0 +1,71 @@
+# Week 7: Classification 2
+
+## Summary
+
+### Landcover classification
+
+a.  Object based image analysis
+
+-   consider shapes based on the similarity (homogeneity) or difference (heterogeneity) of the cells = **superpixels**
+
+-   **Method** for Superpixel generation: SLIC (Simple Linear Iterative Clustering), based on the colour difference to the centre point (homogenity of colours)
+
+-   advanced package: *SegOptim*
+
+b.  Sub pixel analysis
+
+-   Spectral Mixture Analysis (SMA): determines the **proportion** or **abundance** of landcover per pixel
+
+-   package: *MESMA (Multiple endmember spectral analysis)* from *RStoolbox*
+
+-   Number of End members
+
+    -   simplify the process and use the **V-I-S model** in urban areas: Vegetation-Impervious surface-Soil (V-I-S) fractions
+
+    -   each cover type can only has one **end member**
+
+### Accuracy assessment
+
+a.  Terms
+
+![Binary confusion matrix, Source: @barsi2018](img07/accuracymatrix.png){#fig-accuracy}
+
+-   **PA**: Producer accuracy (recall or true positive rate or sensitivity)
+
+    * defined as the fraction of correctly classified pixels (TP) compared to ground truth data (TP+**FN**)
+    
+    * $\frac{TP}{TP+FN}$
+
+-   **UA**: User accuracy (consumer's accuracy or precision or positive predictive value)
+
+    * defined as the fraction of correctly classified pixels (TP) relative to all others classified as a particular land cover(TP+**FP**)
+    
+    * $\frac{TP}{TP+FP}$
+
+-   **OA**: the (overall) accuracy
+
+    * represents the combined fraction of correctly classified pixels (TP +TN) across all land cover types (TP+FP+FN+TN)
+    
+    * $\frac{TP+TN}{TP+FP+FN+TN}$
+
+* Where model is **correct**
+
+    * True positive = model predicts positive class correctly
+    
+    * True negative = model predicts negative class correctly
+    
+* Where model is **incorrect**
+
+    * False positive = model predicts positive, but it is negative
+
+    * False negative = model predicts negative, but it is positive
+    
+* Errors of omission: Landcover omitted from correct class (100 - PA)
+
+* Errors of commission: Classified sites for incorrect classifications (100 - UA)
+
+* Kappa coefficient
+    
+    * Designed to express the accuracy of an image compared to the results by chance
+    
+    * Ranges from 0 to 1
