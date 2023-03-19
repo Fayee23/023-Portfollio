@@ -98,7 +98,8 @@ High-density is an important characteristic of smart growth policies. This impli
 
 Urban growth patterned followed the policy recommendation as outlined in the 2005 version of the South East Queensland Regional Plan that Brisbane needs a policy shift from horizontal expansion of cities to vertical expansion to accommodate population growth in a sustainable manner. Note that Brisbane population grew by 1.4% and 1.9% between 1991 and 2004, and between 2004 and 2013 respectively. Despite the population growth continued, the rate of urban expansion dropped significantly during the latter period.
 
-![Land Use and Cover Change, Source:](img08/LUCC.png){#fig-LUCCresults} \* Urban Heat Island pattern
+![Land Use and Cover Change, Source:](img08/LUCC.png){#fig-LUCCresults} 
+* Urban Heat Island pattern
 
 On average, the urban areas in Brisbane experienced 1.31 ◦C, 2.98 ◦C, 3.75 ◦C higher temperature compared to their rural surrounding in 1991, 2004, and 2013 respectively. Spatially, the suburbs with UHI effect vary between the periods.
 

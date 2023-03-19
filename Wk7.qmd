@@ -1,5 +1,7 @@
 # Week 7: Classification 2
 
+*This is the learning diary for week seven, about further approach of classification and the method to test the accuracy of classification. *
+
 ## Summary
 
 ### Landcover classification
