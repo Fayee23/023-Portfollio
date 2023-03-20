@@ -98,9 +98,9 @@ High-density is an important characteristic of smart growth policies. This impli
 
 Urban growth patterned followed the policy recommendation as outlined in the 2005 version of the South East Queensland Regional Plan that Brisbane needs a policy shift from horizontal expansion of cities to vertical expansion to accommodate population growth in a sustainable manner. Note that Brisbane population grew by 1.4% and 1.9% between 1991 and 2004, and between 2004 and 2013 respectively. Despite the population growth continued, the rate of urban expansion dropped significantly during the latter period.
 
-![Land Use and Cover Change, Source:](img08/LUCC.png){#fig-LUCCresults} 
+![Land Use and Cover Change, Source: @deilami2017](img08/LUCC.png){#fig-LUCCresults}
 
-* Urban Heat Island pattern
+-   Urban Heat Island pattern
 
 On average, the urban areas in Brisbane experienced 1.31 ◦C, 2.98 ◦C, 3.75 ◦C higher temperature compared to their rural surrounding in 1991, 2004, and 2013 respectively. Spatially, the suburbs with UHI effect vary between the periods.
 
@@ -108,11 +108,11 @@ On average, the urban areas in Brisbane experienced 1.31 ◦C, 2.98 ◦C, 3.75 �
 
 Results show that compared to the 2004 and 2013 levels, Brisbane will experience a middle levels of UHI effect in 2023, irrespective of the policy scenarios.
 
-![UHI prediction](img08/UHIpred.png){#fig-UHIpredict}
+![UHI prediction, Source: @deilami2017](img08/UHIpred.png){#fig-UHIpredict}
 
 On average, the infill development scenario, as a smart growth policy, has a marginally better potential to mitigate the UHI effect in Brisbane in 2023 compared to the sprawl development scenario conditional on the definition applied in this research. The UHI effect would be more equitably balanced spatially under the sprawl development scenario.
 
-![UHI in different senarioes](img08/UHIinscenario.png){#fig-UHI-in-scenario}
+![UHI in different senarioes, Source: @deilami2017](img08/UHIinscenario.png){#fig-UHI-in-scenario}
 
 ## Reflection
 

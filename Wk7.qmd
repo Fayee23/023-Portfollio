@@ -72,7 +72,7 @@ b.  **Kappa coefficient**
 
 -   Ranges from 0 to 1
 
-![Max. and min. Kappa coefficient with overall accuracy, Source:](img07/kappa.png){#fig-kappa}
+![Max. and min. Kappa coefficient with overall accuracy, Source: @foody2020](img07/kappa.png){#fig-kappa}
 
 c.  **F1 score**
 
@@ -105,9 +105,11 @@ e.  **Spatial cross validation** - need to consider spatial autocorrelation
 -   by controlling with **C** parameter, permit misclassifications and then avoid **overfit** (see @fig-overfitting in @sec-week-6-classification-1)
 
 ::: {#Cparameter layout-ncol="2"}
-![Standard SVM, Source:](img07/standardSVM.png){#fig-standard_SVM)
+
+![Standard SVM, Source: @yildirim2020](img07/standardSVM.png){#fig-standard_SVM}
 
 ![Soft margin SVM, Source: @yildirim2020](img07/softSVM.png){#fig-soft_margin_SVM}
+
 :::
 
 -   **Gamma**: controls the influence of a training point within the classified data - low gamma = big radius, large gamma = low radius
@@ -126,7 +128,9 @@ Both Sentinel-2 (**optical**) and Sentinel-1 (**radar**) images were used for te
 
 -   Methodology
 
-![workflow, source:](img07/flowchart.png){#fig-ghasemi2021workflow} After data processing, there are three main stage. For the third stage - Supervised Classification - two classification methods were applied and then use kappa coefficient to test the accuracy.
+![workflow, source: @ghasemi2021](img07/flowchart.png){#fig-ghasemi2021workflow} 
+
+After data processing, there are three main stage. For the third stage - Supervised Classification - two classification methods were applied and then use kappa coefficient to test the accuracy.
 
 ### Result
 
@@ -137,7 +141,7 @@ The results showed that the use of radar images only with backscattering intensi
 ::: {#Sentinel-2 layout-ncol="2"}
 ![Classification results of Sentinel-2 image with SVM and ML classifications, Source: @ghasemi2021](img07/classification.png){#fig-classification_s2}
 
-![Accuracy assessment matrix in SVM and ML classification of Sentinel-2 image, Source:](img07/matrix.png){#fig-standard_SVM)
+![Accuracy assessment matrix in SVM and ML classification of Sentinel-2 image, Source: @ghasemi2021](img07/matrix.png){#fig-accuracy_s2}
 :::
 
 The transmitted frequencies of radar images have different redistributions to different phenomena. The numerical results obtained from the radar image classification show that using only the radar image redistribution led to low accuracies at both VV and VH polarization, but the use of the textural analysis significantly increased the accuracy of the classifications.
@@ -145,17 +149,17 @@ The transmitted frequencies of radar images have different redistributions to di
 -   Classification and accuracy assessment for **Sentinel-1 image**
 
 ::: {#Sentinel-1cla layout-ncol="2"}
-![SVM and ML classifications of Sentinel-1 image in VH polarization, Source: @ghasemi2021](img07/classificationVH.png)
+![SVM and ML classifications of Sentinel-1 image in VH polarization, Source: @ghasemi2021](img07/classificationVH.png){#fig-classification_VH}
 
-![SVM and ML classifications of Sentinel-1 image in VV polarization, Source:](img07/classificationVV.png){#fig-standard_SVM)
+![SVM and ML classifications of Sentinel-1 image in VV polarization, Source: @ghasemi2021](img07/classificationVV.png){#fig-classification_VV}
 :::
 
 The statistical results obtained from the ML and SVM classifications for radar images at VV and VH polarization indicated that the latter performed better than the former. When texture analysis was not used in the classes, the classification accuracy was low with kappa values of 0.37 and 0.42 for VV and VH polarization, respectively.
 
 ::: {#Sentinel-1mat layout-ncol="2"}
-![Accuracy assessment matrix of the Sentinel-1 image in VH polarization, Source: @ghasemi2021](img07/matrixVH.png)
+![Accuracy assessment matrix of the Sentinel-1 image in VH polarization, Source: @ghasemi2021](img07/matrixVH.png){#fig-accuracy_VH}
 
-![Accuracy assessment matrix of the Sentinel-1 image in VV polarization, Source:](img07/matrixVV.png){#fig-standard_SVM)
+![Accuracy assessment matrix of the Sentinel-1 image in VV polarization, Source: @ghasemi2021](img07/matrixVV.png){#fig-accuracy_VV}
 :::
 
 The use of texture analysis and obtaining the optimum window size is increase the classification accuracy with a better performance for VH polarization. The SVM classification method with a kappa coefficient of 0.72% showed better performance than the ML one with a kappa coefficient of 0.61%. Conclusively, in the absence of Sentinel-2 datasets, Sentinel-1 images are good alternatives if the preserved texture information is available for the land cover classification.

@@ -109,7 +109,7 @@ c.  Jargon
     -   low values of both red and NIR: wet bare soil.
 
 ::: {#spectral_feature layout-ncol="2"}
-![NIR vs.Red scatter, frome own practical result](img01/NIRvsRed1.png){#fig-NIRvsRed1}
+![NIR vs.Red scatter, from own practical result](img01/NIRvsRed1.png){#fig-NIRvsRed1}
 
 ![spectral feature, Source: [Remote Sensing 4113](http://geofaculty.uwyo.edu/rhowell/classes/remote_sensing/labs/lab_11_2018_alternate_vegetation.pdf)](img01/NIRvsRed2.png){#fig-spectral_feature}
 :::

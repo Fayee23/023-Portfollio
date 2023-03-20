@@ -32,11 +32,11 @@ b.  Classification and regression trees (CART)
 
 -   regression trees: subset the data into smaller chunks if linear regression doesn't fit
 
-    ![how data subseted](img06/regressiontree.png){#fig-RegressionTreeProcess}
+    ![How data subseted, Source: [StatQuest](https://www.youtube.com/watch?v=g9c66TUylZ4)](img06/regressiontree.png){#fig-RegressionTreeProcess}
 
     -   each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
 
-    ![Source: Seema Singh](img06/overfitting.png){#fig-overfitting}
+    ![Source: @singh2018](img06/overfitting.png){#fig-overfitting}
 
     -   To prevent over fitting we can set a minimum number of observations before splitting the data again.
 

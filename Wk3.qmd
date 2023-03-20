@@ -8,7 +8,7 @@
 
 a.  Geometric correction
 
-![Source:[Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942)](img03/Geometric-correction.png){#fig-correction}
+![Source: [Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942)](img03/Geometric-correction.png){#fig-correction}
 
 -   Solution 1: identify Ground Control Points (GPS) to match known points in the image and a reference dataset, take the coordinates and model them to give geometric transformation coefficients
 
@@ -38,11 +38,11 @@ Change digital brightness values into scaled surface reflectance. We can then co
 
     -   Path radiance: radiance reflected above the surface (e.g. scattering)
 
-    ![radiance reflect, Source: Remote Sensing in Precision Agriculture](img03/Path-radiance.png){#fig-radiance}
+    ![radiance reflect, Source: [Remote Sensing in Precision Agriculture](https://ohioline.osu.edu/factsheet/fabe-5541)](img03/Path-radiance.png){#fig-radiance}
 
     -   Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
 
-    ![Atmospheric attenuation, Source: GIS geography](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
+    ![Atmospheric attenuation, Source: [GIS geography](https://gisgeography.com/atmospheric-window/)](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
 
 c.  Orthorectification correction (i.e topographic correction)
 
