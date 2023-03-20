@@ -177,6 +177,12 @@ div.csl-indent {
   <li><a href="#landcover-classification" id="toc-landcover-classification" class="nav-link" data-scroll-target="#landcover-classification"><span class="toc-section-number">7.1.1</span>  Landcover classification</a></li>
   <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="toc-section-number">7.1.2</span>  Accuracy assessment</a></li>
   </ul></li>
+  <li><a href="#sec-7-application" id="toc-sec-7-application" class="nav-link" data-scroll-target="#sec-7-application"><span class="toc-section-number">7.2</span>  Application</a>
+  <ul class="collapse">
+  <li><a href="#data-and-methodology" id="toc-data-and-methodology" class="nav-link" data-scroll-target="#data-and-methodology"><span class="toc-section-number">7.2.1</span>  Data and Methodology</a></li>
+  <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result"><span class="toc-section-number">7.2.2</span>  Result</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7.3</span>  Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +191,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification 2</span></h1>
+<h1 class="title"><span id="sec-week-7-classification-2" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7: Classification 2</span></span></h1>
 </div>
 
 
@@ -199,7 +205,7 @@ div.csl-indent {
 
 </header>
 
-<p><em>This is the learning diary for week seven, about further approach of classification and the method to test the accuracy of classification. </em></p>
+<p><em>This is the learning diary for week seven, about further approach of classification and the method to test the accuracy of classification.</em></p>
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
 <section id="landcover-classification" class="level3" data-number="7.1.1">
@@ -228,7 +234,7 @@ div.csl-indent {
 <section id="accuracy-assessment" class="level3" data-number="7.1.2">
 <h3 data-number="7.1.2" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">7.1.2</span> Accuracy assessment</h3>
 <ol type="a">
-<li>Terms</li>
+<li><strong>Binary confusion matrix</strong></li>
 </ol>
 <div id="fig-accuracy" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -264,20 +270,185 @@ div.csl-indent {
 </ul></li>
 <li><p>Errors of omission: Landcover omitted from correct class (100 - PA)</p></li>
 <li><p>Errors of commission: Classified sites for incorrect classifications (100 - UA)</p></li>
-<li><p>Kappa coefficient</p>
+</ul>
+<ol start="2" type="a">
+<li><strong>Kappa coefficient</strong></li>
+</ol>
 <ul>
 <li><p>Designed to express the accuracy of an image compared to the results by chance</p></li>
 <li><p>Ranges from 0 to 1</p></li>
-</ul></li>
 </ul>
+<div id="fig-kappa" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img07/kappa.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.2: Max. and min. Kappa coefficient with overall accuracy, Source:</figcaption><p></p>
+</figure>
+</div>
+<ol start="3" type="a">
+<li><strong>F1 score</strong></li>
+</ol>
+<p>combines both recall (Producer accuracy) and Precision (User accuracy)</p>
+<ul>
+<li><p><span class="math inline">\(F1=\frac{TP}{TP+1/2*(FP+FN)}\)</span></p></li>
+<li><p>Ranges from 0 to 1, where 1 is better performance</p></li>
+</ul>
+<ol start="4" type="a">
+<li><strong>Receiver Operating Characteristic Curve</strong></li>
+</ol>
+<ul>
+<li><p>True Positive rate: probability that a positive sample is correctly predicted in the positive class - planes predicted to be planes</p>
+<ul>
+<li><span class="math inline">\(\frac{TP}{TP+FN}\)</span>, <em>equal to PA</em></li>
+</ul></li>
+<li><p>False positive rate: probability that a negative sample is incorrectly predicted in the positive class - predicted planes but are clouds</p>
+<ul>
+<li><span class="math inline">\(\frac{FP}{FP+TN}\)</span></li>
+</ul></li>
+<li><p>Maximise true positives (1) and minimise false positives (0)</p></li>
+</ul>
+<div id="fig-ROCcurve" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img07/ROCcurve.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.3: Source: <a href="https://mlu-explain.github.io/roc-auc/">MUL-EXPLAIN</a></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>Area Under the ROC Curve:probability that the model will rank a randomly chosen positive example more highly than a randomly chosen negative example.</li>
+</ul>
+<ol start="5" type="a">
+<li><strong>Spatial cross validation</strong> - need to consider spatial autocorrelation</li>
+</ol>
+<ul>
+<li><p>spatially partition the folded data, folds are from cross validation</p></li>
+<li><p>by controlling with <strong>C</strong> parameter, permit misclassifications and then avoid <strong>overfit</strong> (see <a href="Wk6.html#fig-overfitting">Figure&nbsp;<span>6.2</span></a> in <a href="Wk6.html"><span>Chapter&nbsp;6</span></a>)</p></li>
+</ul>
+<div id="Cparameter" class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="img07/standardSVM.png" class="img-fluid" alt="Standard SVM, Source:">{#fig-standard_SVM)</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-soft_margin_SVM" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img07/softSVM.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.4: Soft margin SVM, Source: <span class="citation" data-cites="yildirim2020">Yıldırım (<a href="references.html#ref-yildirim2020" role="doc-biblioref">2020</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Gamma</strong>: controls the influence of a training point within the classified data - low gamma = big radius, large gamma = low radius</li>
+</ul>
+</section>
+</section>
+<section id="sec-7-application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="sec-7-application"><span class="header-section-number">7.2</span> Application</h2>
+<p><span class="citation" data-cites="ghasemi2021">Ghasemi, Karimzadeh, and Feizizadeh (<a href="references.html#ref-ghasemi2021" role="doc-biblioref">2021</a>)</span> used <strong>radar Sentinel-1 images</strong> with polarization VV and VH for the land classification in Tabriz. Sentinel-2 images for the same time were applied as a reference for the calibration and accuracy assessment. <strong>Maximum likelihood (ML)</strong> and <strong>support vector machine (SVM)</strong> algorithms were employed for supervised classification, <strong>kappa coefficient</strong> was used to assess the accuracy.</p>
+<section id="data-and-methodology" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="data-and-methodology"><span class="header-section-number">7.2.1</span> Data and Methodology</h3>
+<ul>
+<li>Data</li>
+</ul>
+<div id="fig-sentineldata" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img07/data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.5: Characteristics of the acquired optical and SAR data, Source: <span class="citation" data-cites="ghasemi2021">Ghasemi, Karimzadeh, and Feizizadeh (<a href="references.html#ref-ghasemi2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>Both Sentinel-2 (<strong>optical</strong>) and Sentinel-1 (<strong>radar</strong>) images were used for texture analysis. Sentinel-2 images are of MSI-2 type and were subjected to preprocessing. Sentinel-1 images, with single look complex (SLC) format, are of IW (interferometric wide) sensor mode.</p>
+<ul>
+<li>Methodology</li>
+</ul>
+<p><img src="img07/flowchart.png" id="fig-ghasemi2021workflow" class="img-fluid" alt="workflow, source:"> After data processing, there are three main stage. For the third stage - Supervised Classification - two classification methods were applied and then use kappa coefficient to test the accuracy.</p>
+</section>
+<section id="result" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="result"><span class="header-section-number">7.2.2</span> Result</h3>
+<p>The results showed that the use of radar images only with backscattering intensity resulted in poor performance while using the gray-level co-occurrence matrix (GLCM) of texture features increased the accuracy.</p>
+<ul>
+<li>Classification and accuracy assessment for <strong>Sentinel-2 image</strong></li>
+</ul>
+<div id="Sentinel-2" class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-classification_s2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img07/classification.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.6: Classification results of Sentinel-2 image with SVM and ML classifications, Source: <span class="citation" data-cites="ghasemi2021">Ghasemi, Karimzadeh, and Feizizadeh (<a href="references.html#ref-ghasemi2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="img07/matrix.png" class="img-fluid" alt="Accuracy assessment matrix in SVM and ML classification of Sentinel-2 image, Source:">{#fig-standard_SVM)</p>
+</div>
+</div>
+</div>
+<p>The transmitted frequencies of radar images have different redistributions to different phenomena. The numerical results obtained from the radar image classification show that using only the radar image redistribution led to low accuracies at both VV and VH polarization, but the use of the textural analysis significantly increased the accuracy of the classifications.</p>
+<ul>
+<li>Classification and accuracy assessment for <strong>Sentinel-1 image</strong></li>
+</ul>
+<div id="Sentinel-1cla" class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img07/classificationVH.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">SVM and ML classifications of Sentinel-1 image in VH polarization, Source: <span class="citation" data-cites="ghasemi2021">Ghasemi, Karimzadeh, and Feizizadeh (<a href="references.html#ref-ghasemi2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="img07/classificationVV.png" class="img-fluid" alt="SVM and ML classifications of Sentinel-1 image in VV polarization, Source:">{#fig-standard_SVM)</p>
+</div>
+</div>
+</div>
+<p>The statistical results obtained from the ML and SVM classifications for radar images at VV and VH polarization indicated that the latter performed better than the former. When texture analysis was not used in the classes, the classification accuracy was low with kappa values of 0.37 and 0.42 for VV and VH polarization, respectively.</p>
+<div id="Sentinel-1mat" class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img07/matrixVH.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Accuracy assessment matrix of the Sentinel-1 image in VH polarization, Source: <span class="citation" data-cites="ghasemi2021">Ghasemi, Karimzadeh, and Feizizadeh (<a href="references.html#ref-ghasemi2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="img07/matrixVV.png" class="img-fluid" alt="Accuracy assessment matrix of the Sentinel-1 image in VV polarization, Source:">{#fig-standard_SVM)</p>
+</div>
+</div>
+</div>
+<p>The use of texture analysis and obtaining the optimum window size is increase the classification accuracy with a better performance for VH polarization. The SVM classification method with a kappa coefficient of 0.72% showed better performance than the ML one with a kappa coefficient of 0.61%. Conclusively, in the absence of Sentinel-2 datasets, Sentinel-1 images are good alternatives if the preserved texture information is available for the land cover classification.</p>
+<ul>
+<li>Kappa coefficient</li>
+</ul>
+<div id="fig-kapparesult" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="img07/kapparesult.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.7: Accuracy assessment matrix of the Sentinel-1 image in VH polarization, Source: <span class="citation" data-cites="ghasemi2021">Ghasemi, Karimzadeh, and Feizizadeh (<a href="references.html#ref-ghasemi2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>The content in this week is so complicated and massive!</p>
+<p>However, accuracy assessment is a critical step in remote sensing image classification, as it allows us to evaluate how well the classification model performs in distinguishing different land covers or features. The accuracy of the classification results depends on various factors, such as the quality and resolution of the remote sensing <strong>data</strong>, the <strong>classification algorithm used</strong> (see both application in <a href="Wk6.html#sec-6-application"><span>Section&nbsp;6.2</span></a> and <a href="#sec-7-application"><span>Section&nbsp;7.2</span></a>), the number and quality of the <strong>training samples</strong>, and the classification scheme used.</p>
+<p>It’s essential to perform accuracy assessment to ensure that the classification results are reliable and accurate. This information is critical for making informed decisions in various fields such as environmental monitoring, land management, and urban planning.</p>
+<p>In <a href="Wk6.html#sec-6-application"><span>Section&nbsp;6.2</span></a> of <a href="Wk6.html"><span>Chapter&nbsp;6</span></a>, we recognised that each method of classification has its own advantage and disadvantage, although it just assessed the accuracy qualitatively and manually. And in <a href="#sec-7-application"><span>Section&nbsp;7.2</span></a>, we can find out the accuracy quantitatively with different methods and different data.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-barsi2018" class="csl-entry" role="doc-biblioentry">
 Barsi, Á., Zs Kugler, I. László, Gy Szabó, and H. M. Abdulmutalib. 2018. <span>“<span>ACCURACY DIMENSIONS IN REMOTE SENSING</span>.”</span> <em>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em> XLII-3 (April): 61–67. <a href="https://doi.org/10.5194/isprs-archives-XLII-3-61-2018">https://doi.org/10.5194/isprs-archives-XLII-3-61-2018</a>.
 </div>
+<div id="ref-ghasemi2021" class="csl-entry" role="doc-biblioentry">
+Ghasemi, Mohammad, Sadra Karimzadeh, and Bakhtiar Feizizadeh. 2021. <span>“Urban Classification Using Preserved Information of High Dimensional Textural Features of <span>Sentinel-1</span> Images in <span>Tabriz</span>, <span>Iran</span>.”</span> <em>Earth Science Informatics</em> 14 (4): 1745–62. <a href="https://doi.org/10.1007/s12145-021-00617-2">https://doi.org/10.1007/s12145-021-00617-2</a>.
 </div>
-</section>
+<div id="ref-yildirim2020" class="csl-entry" role="doc-biblioentry">
+Yıldırım, Soner. 2020. <span>“Hyperparameter <span>Tuning</span> for <span>Support Vector Machines</span> <span>C</span> and <span>Gamma Parameters</span>.”</span> <em>Medium</em>. https://towardsdatascience.com/hyperparameter-tuning-for-support-vector-machines-c-and-gamma-parameters-6a5097416167.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
