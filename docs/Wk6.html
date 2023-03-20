@@ -177,7 +177,7 @@ div.csl-indent {
   <li><a href="#classify-remote-sense-data" id="toc-classify-remote-sense-data" class="nav-link" data-scroll-target="#classify-remote-sense-data"><span class="toc-section-number">6.1.2</span>  Classify remote sense data</a></li>
   <li><a href="#practical" id="toc-practical" class="nav-link" data-scroll-target="#practical"><span class="toc-section-number">6.1.3</span>  Practical</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.2</span>  Application</a>
+  <li><a href="#sec-6-application" id="toc-sec-6-application" class="nav-link" data-scroll-target="#sec-6-application"><span class="toc-section-number">6.2</span>  Application</a>
   <ul class="collapse">
   <li><a href="#policy-background" id="toc-policy-background" class="nav-link" data-scroll-target="#policy-background"><span class="toc-section-number">6.2.1</span>  Policy background</a></li>
   <li><a href="#data-and-methodology" id="toc-data-and-methodology" class="nav-link" data-scroll-target="#data-and-methodology"><span class="toc-section-number">6.2.2</span>  Data and Methodology</a></li>
@@ -206,7 +206,7 @@ div.csl-indent {
 
 </header>
 
-<p><em>This is the learning diary for week six, about the main method of remote sensing analysis. And the application is to identify the slum areas by two classification approach. </em></p>
+<p><em>This is the learning diary for week six, about the main method of remote sensing analysis. And the application is to identify the slum areas by two classification approach.</em></p>
 <section id="summary" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
 <section id="classified-data-in-action" class="level3" data-number="6.1.1">
@@ -324,8 +324,8 @@ div.csl-indent {
 </div>
 </section>
 </section>
-<section id="application" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<section id="sec-6-application" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-6-application"><span class="header-section-number">6.2</span> Application</h2>
 <p><span class="citation" data-cites="leonita2018">Leonita et al. (<a href="references.html#ref-leonita2018" role="doc-biblioref">2018</a>)</span> evaluated the performance of two machine learning algorithms, i.e., support vector machine (SVM) and random forest (RF), for slum mapping in support of the slum mapping campaign in Bandung, Indonesia. Recognizing the complexity in differentiating slum and formal areas in Indonesia, the study used a combination of spectral, contextual, and morphological features. In addition, sequential feature selection (SFS) combined with the Hilbert–Schmidt independence criterion (HSIC) was used to select significant features for classifying slums.</p>
 <section id="policy-background" class="level3" data-number="6.2.1">
 <h3 data-number="6.2.1" class="anchored" data-anchor-id="policy-background"><span class="header-section-number">6.2.1</span> Policy background</h3>
@@ -384,8 +384,8 @@ div.csl-indent {
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
 <p>Each method of classification has its own advantage and disadvantage. The choice of classification method depends on the specific application and the characteristics of the data being analyzed. Some methods may be more accurate than others, depending on the complexity of the landscape and the spectral variability of the different land cover or land use classes.</p>
 <p>In the study above <span class="citation" data-cites="leonita2018">(<a href="references.html#ref-leonita2018" role="doc-biblioref">Leonita et al. 2018</a>)</span>, both SVM and RF classification results show misclassification, particularly for small formal structures. This is due to similar morphological characteristics and roof material of both categories, thus with an image, we can only capture morphological slums<span class="citation" data-cites="wurm2018a taubenbock2018">(<a href="references.html#ref-wurm2018a" role="doc-biblioref">Wurm and Taubenböck 2018</a>; <a href="references.html#ref-taubenbock2018" role="doc-biblioref">Taubenböck, Kraff, and Wurm 2018</a>)</span>. Furthermore, the uncertainty of slum boundaries plays a role that slums and nonslums have fuzzy boundaries.</p>
-<p>Therefore, I think it is necessary to combine with the extraction of building information (see application section in <a href="Wk2.html">week&nbsp;<span>2</span></a>) after a general classification. With the data of building density, building sizes and height, and average building distance, the slum boundary can be confirm at block level and even individual buildings level. This will improve the accuracy of slums detection.</p>
-<p>Interestingly, I find <span class="citation" data-cites="taubenbock2014">Taubenböck and Kraff (<a href="references.html#ref-taubenbock2014" role="doc-biblioref">2014</a>)</span> has carried out a study identifying characteristic physical features of the built environment that allows defining slum areas. Using highresolution optical satellite data, parameters such as building density, building heights, and sizes are used to differentiate between slums and formal settlements.</p>
+<p>Therefore, I think it is necessary to combine with the extraction of <strong>building information</strong> (see application section in <a href="Wk2.html"><span>Chapter&nbsp;2</span></a>) after a general classification. With the data of building density, building sizes and height, and average building distance, the slum boundary can be confirm at block level and even individual buildings level. This will improve the accuracy of slums detection.</p>
+<p>Interestingly, I find <span class="citation" data-cites="taubenbock2014">Taubenböck and Kraff (<a href="references.html#ref-taubenbock2014" role="doc-biblioref">2014</a>)</span> has carried out a study identifying characteristic physical features of the built environment that allows defining slum areas. Using highresolution optical satellite data, parameters such as building density, building heights, and sizes are used to differentiate between <strong>slums and formal settlements</strong>.</p>
 <p>Going back to the lecture content, classification is complicated but powerful. It is an important method used in remote sensing for analyzing and categorizing land cover and land use patterns, providing valuable information for environmental monitoring, land use planning, and natural resource management. Also, it reduces a large amount of manual work.</p>
 
 

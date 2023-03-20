@@ -20,7 +20,7 @@ b.  Active (Radar, X-ray, LiDAR)
 
 -   Actively emits electormagentic waves and then waits to receive (Synthetic Aperture Radar (SAR) collects at longer wavelength that can pass through clouds)
 
-![sensor](img01/sensor.png){#fig-sensor}
+![sensor, source: @adamo2020](img01/sensor.png){#fig-sensor}
 
 ### Electromagnetic radiation (EMR)
 
@@ -49,9 +49,9 @@ b.  Atmospheric: *its particles scatter energy*
 *The more it scattered, the deeper color it shows (e.g. shallow water vs deeper ocean)*
 
 ::: {#wavelength layout-ncol="2"}
-![Raleigh scatter](img01/Raleigh_scatter.png){#fig-scatter}
+![Raleigh scatter, Source: @hurley2015](img01/Raleigh_scatter.png){#fig-scatter}
 
-![wavelength](img01/wavelength1.png){#fig-wavelength}
+![wavelength, Source: @hurley2015](img01/wavelength1.png){#fig-wavelength}
 :::
 
 -   Mie = particles are the same size compared to the wavelength
@@ -66,7 +66,7 @@ b.  Atmospheric: *its particles scatter energy*
 
     *HH = emitted in horizontal (H) and received in horizontal (H)*
 
-![dual polarization](img01/polarization.png){#fig-polarization}
+![dual polarization, Source: @dabboor2018](img01/polarization.png){#fig-polarization}
 
 -   Quad polarization: system can transmit and receive four types
 
@@ -82,7 +82,7 @@ b.  Resolutions
 
     *Ture color: what human see*
 
-![Spectral signature](img01/spectral.png){#fig-spectral}
+![Spectral signature, Source:[SEOS](https://seos-project.eu/classification/classification-c01-p05.html)](img01/spectral.png){#fig-spectral}
 
 -   Radiometric resolution
 
@@ -109,12 +109,12 @@ c.  Jargon
     -   low values of both red and NIR: wet bare soil.
 
 ::: {#spectral_feature layout-ncol="2"}
-![NIR vs.Red scatter](img01/NIRvsRed1.png){#fig-NIRvsRed1}
+![NIR vs.Red scatter, frome own practical result](img01/NIRvsRed1.png){#fig-NIRvsRed1}
 
-![spectral feature](img01/NIRvsRed2.png){#fig-spectral_feature}
+![spectral feature, Source: [Remote Sensing 4113](http://geofaculty.uwyo.edu/rhowell/classes/remote_sensing/labs/lab_11_2018_alternate_vegetation.pdf)](img01/NIRvsRed2.png){#fig-spectral_feature}
 :::
 
-## Application of satellite imagery
+## Short Review on the Application of satellite imagery
 
 Satellite remote sensing imagery is the most common remote sensing data used in regional science research in urban settings [@patino2013]. And Landsat imagery is one of satellite remote sensing data with consistent medium resolution.
 
