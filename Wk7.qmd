@@ -6,7 +6,7 @@
 
 ### Landcover classification
 
-a.  Object based image analysis
+a.  **Object based image analysis**
 
 -   consider shapes based on the similarity (homogeneity) or difference (heterogeneity) of the cells = **superpixels**
 
@@ -14,7 +14,7 @@ a.  Object based image analysis
 
 -   advanced package: *SegOptim*
 
-b.  Sub pixel analysis
+b.  **Sub pixel analysis**
 
 -   Spectral Mixture Analysis (SMA): determines the **proportion** or **abundance** of landcover per pixel
 

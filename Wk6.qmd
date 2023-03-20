@@ -20,23 +20,23 @@ extract land cover from earth observation data
 
 ### Classify remote sense data
 
-a.  Expert systems
+a.  **Expert systems**
 
 -   a system that uses human knowledge to solve problems that normally require human intelligence
 
 -   example: machine learning
 
-b.  Classification and regression trees (CART)
+b.  **Classification and regression trees** (CART)
 
 -   classification trees
 
 -   regression trees: subset the data into smaller chunks if linear regression doesn't fit
 
-    ![How data subseted, Source: [StatQuest](https://www.youtube.com/watch?v=g9c66TUylZ4)](img06/regressiontree.png){#fig-RegressionTreeProcess}
+    ![How data subseted, Source: StatQuest](img06/regressiontree.png){#fig-RegressionTreeProcess}
 
     -   each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
 
-    ![Source: @singh2018](img06/overfitting.png){#fig-overfitting}
+    ![Source: ](img06/overfitting.png){#fig-overfitting}
 
     -   To prevent over fitting we can set a minimum number of observations before splitting the data again.
 
@@ -44,7 +44,7 @@ b.  Classification and regression trees (CART)
 
     > Tree score = SSR + tree penalty (alpha) \* T (number of leaves)
 
-c.  Random forests: many classification decision trees
+c.  **Random forests**: many classification decision trees
 
 Make decision tree from random number of variables (never all of them), and then repeat
 
@@ -54,7 +54,7 @@ Make decision tree from random number of variables (never all of them), and then
 
 -   Often the number of variables per tree is calculated from square root of variables in the original data.
 
-d.  Image classification
+d.  **Image classification**
 
 -   Turn every pixel in the image into one of a pre-defined categorical classification
 
@@ -70,7 +70,7 @@ d.  Image classification
 
 -   can add everything such as texture
 
-e.  Support Vector Machine (SVM)
+e.  **Support Vector Machine** (SVM)
 
 a linear binary classifier, like logistic regression, classify training data by **maximum margin classifier**.
 

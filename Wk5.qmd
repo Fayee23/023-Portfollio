@@ -36,13 +36,13 @@ e.  visualization and analysis of the modeling outcomes
 
 ### Result
 
-a.  LULC
+* LULC
 
 ![Source: @liang2020](img05/LULCresult.png){#fig-LULCresult}
 
 urban built-up area in the city center of Hohhot expanded a lot from 2005 to 2016, and several suburban centers and distant areas observed apparent urban expansion.
 
-b.  ESV estimation and urban sustainability modeling
+* ESV estimation and urban sustainability modeling
 
 ![Source: @liang2020](img05/SI.png){#fig-ESVresult}
 

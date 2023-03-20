@@ -6,7 +6,7 @@
 
 ### Corrections
 
-a.  Geometric correction
+a.  **Geometric correction**
 
 ![Source: [Abdul Basith](https://www.researchgate.net/figure/Geometric-correction-procedures_fig7_320710942)](img03/Geometric-correction.png){#fig-correction}
 
@@ -16,7 +16,7 @@ a.  Geometric correction
 
 -   Solution 2: RMSE
 
-b.  Atmospheric correction (remove the effect of atmosphere)
+b.  **Atmospheric correction** (remove the effect of atmosphere)
 
 two sources of environmental attenuation: Atmospheric scattering, Topographic attenuation
 
@@ -38,25 +38,25 @@ Change digital brightness values into scaled surface reflectance. We can then co
 
     -   Path radiance: radiance reflected above the surface (e.g. scattering)
 
-    ![radiance reflect, Source: [Remote Sensing in Precision Agriculture](https://ohioline.osu.edu/factsheet/fabe-5541)](img03/Path-radiance.png){#fig-radiance}
+    ![radiance reflect, Source: Remote Sensing in Precision Agriculture](img03/Path-radiance.png){#fig-radiance}
 
     -   Atmospheric attenuation: absorption of EMR due to materials in atmosphere (e.g. water vapour)
 
-    ![Atmospheric attenuation, Source: [GIS geography](https://gisgeography.com/atmospheric-window/)](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
+    ![Atmospheric attenuation, Source: GIS geography](img03/Atmospheric-attenuation.png){#fig-EMRabsorption}
 
-c.  Orthorectification correction (i.e topographic correction)
+c.  **Orthorectification correction** (i.e topographic correction)
 
 -   orthorectification = removing distortions (view staight down)
 
 ![observations from satellite, Source: [NASA page](https://sacs.aeronomie.be/info/sza.php)](img03/observations-from-satellite.png){#fig-SatelliteObservation}
 
-d.  Radiometric Calibration
+d.  **Radiometric Calibration**
 
 -   Sensors capture image brightness and distributed as a Digital Number (or DN)
 
 ### Data joining and enhancement
 
-a.  Joining data sets
+a.  **Joining data sets**
 
 feather the images together and then creates a seamless mosaic or image(s)
 
@@ -66,7 +66,7 @@ feather the images together and then creates a seamless mosaic or image(s)
 
 -   It is then applied to image to using a histogram matching algorithm
 
-b.  Image enhancement
+b.  **Image enhancement**
 
 -   Contrast Enhancement
 

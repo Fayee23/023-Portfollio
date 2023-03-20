@@ -6,7 +6,7 @@
 
 ### Sensor
 
-a.  Passive (human eye, camera, satellite sensor)
+a.  **Passive** (human eye, camera, satellite sensor)
 
 -   Use available energy (reflected sun energy)
 
@@ -14,7 +14,7 @@ a.  Passive (human eye, camera, satellite sensor)
 
 -   Energy is in electromagnetic waves
 
-b.  Active (Radar, X-ray, LiDAR)
+b.  **Active** (Radar, X-ray, LiDAR)
 
 -   Have an energy source for illumination
 
@@ -34,13 +34,13 @@ b.  Active (Radar, X-ray, LiDAR)
 
 #### Interacting with earth's surface
 
-a.  Surface
+a.  **Surface**
 
 -   Absorb energy
 
 -   Transmit energy
 
-b.  Atmospheric: *its particles scatter energy*
+b.  **Atmospheric**: *its particles scatter energy*
 
 -   Rayleigh = particles are very small comparered to the wavelength ---- atmosphere
 
@@ -72,9 +72,9 @@ b.  Atmospheric: *its particles scatter energy*
 
 ### Data
 
-a.  Formats: raster
+a.  **Formats**: raster
 
-b.  Resolutions
+b.  **Resolutions**
 
 -   Spatial resolution
 
@@ -92,7 +92,7 @@ b.  Resolutions
 
     *The revisit time of the sensor (how often)*
 
-c.  Jargon
+c.  **Jargon**
 
 -   Digital number(DN): raw data
 
