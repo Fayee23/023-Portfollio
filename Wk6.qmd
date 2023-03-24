@@ -32,11 +32,11 @@ b.  **Classification and regression trees** (CART)
 
 -   regression trees: subset the data into smaller chunks if linear regression doesn't fit
 
-    ![How data subseted, Source: StatQuest](img06/regressiontree.png){#fig-RegressionTreeProcess}
+    ![How data subseted, Source: [StatQuest](https://www.youtube.com/watch?v=g9c66TUylZ4)](img06/regressiontree.png){#fig-RegressionTreeProcess}
 
     -   each leaf is a regression model, if we have a leaf with just one person or one pixel value it will be **over fitting**
 
-    ![Source: ](img06/overfitting.png){#fig-overfitting}
+    ![Source: [Seema Singh](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229)](img06/overfitting.png){#fig-overfitting}
 
     -   To prevent over fitting we can set a minimum number of observations before splitting the data again.
 
@@ -58,7 +58,7 @@ d.  **Image classification**
 
 -   Turn every pixel in the image into one of a pre-defined categorical classification
 
-![From pixels to objects](img06/imageClassification.png){#fig-imageclassification}
+![From pixels to objects, Source: [Jakub Nowosad, supercells](https://jakubnowosad.com/supercells/articles/rgb_vars.html)](img06/imageClassification.png){#fig-imageclassification}
 
 -   Category:
 
